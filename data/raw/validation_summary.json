@@ -1,0 +1,3957 @@
+{
+  "timestamp": "2025-09-22T21:10:08.284315",
+  "validation_status": "completed",
+  "datasets_analyzed": [
+    "training",
+    "test"
+  ],
+  "dtype_analysis": {
+    "train": {
+      "dataset_name": "training",
+      "total_columns": 105,
+      "data_types": {
+        "farmerid": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 53279,
+          "cardinality_ratio": 0.9994934904138371,
+          "value_types": [
+            "str"
+          ]
+        },
+        "state": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 17,
+          "cardinality_ratio": 0.00031891344313960903,
+          "value_types": [
+            "str"
+          ]
+        },
+        "region": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 5,
+          "cardinality_ratio": 9.379807151164972e-05,
+          "value_types": [
+            "str"
+          ]
+        },
+        "sex": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2,
+          "cardinality_ratio": 3.7519228604659885e-05,
+          "value_types": [
+            "str"
+          ]
+        },
+        "city": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2760,
+          "cardinality_ratio": 0.051776535474430646,
+          "value_types": [
+            "str"
+          ]
+        },
+        "zipcode": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 4632,
+          "cardinality_ratio": 0.0868945334483923,
+          "value_types": [
+            "str"
+          ]
+        },
+        "district": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 405,
+          "cardinality_ratio": 0.0075976437924436275,
+          "value_types": [
+            "str"
+          ]
+        },
+        "village": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 5774,
+          "cardinality_ratio": 0.1083180129816531,
+          "value_types": [
+            "str"
+          ]
+        },
+        "marital_status": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3,
+          "cardinality_ratio": 5.627884290698983e-05,
+          "value_types": [
+            "str"
+          ]
+        },
+        "location": {
+          "dtype": "object",
+          "non_null_count": 34356,
+          "null_count": 18950,
+          "null_percentage": 35.549469102915246,
+          "unique_values": 34002,
+          "cardinality_ratio": 0.6378644055078228,
+          "value_types": [
+            "str"
+          ]
+        },
+        "address_type": {
+          "dtype": "object",
+          "non_null_count": 34356,
+          "null_count": 18950,
+          "null_percentage": 35.549469102915246,
+          "unique_values": 3,
+          "cardinality_ratio": 5.627884290698983e-05,
+          "value_types": [
+            "str"
+          ]
+        },
+        "ownership": {
+          "dtype": "object",
+          "non_null_count": 34356,
+          "null_count": 18950,
+          "null_percentage": 35.549469102915246,
+          "unique_values": 3,
+          "cardinality_ratio": 5.627884290698983e-05,
+          "value_types": [
+            "str"
+          ]
+        },
+        "no_of_active_loan_in_bureau": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 34,
+          "cardinality_ratio": 0.0006378268862792181,
+          "value_types": [
+            "str"
+          ]
+        },
+        "avg_disbursement_amount_bureau": {
+          "dtype": "object",
+          "non_null_count": 30282,
+          "null_count": 23024,
+          "null_percentage": 43.192135969684465,
+          "unique_values": 16017,
+          "cardinality_ratio": 0.3004727422804187,
+          "value_types": [
+            "str"
+          ]
+        },
+        "non_agriculture_income": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3134,
+          "cardinality_ratio": 0.05879263122350205,
+          "value_types": [
+            "str"
+          ]
+        },
+        "total_land_for_agriculture": {
+          "dtype": "object",
+          "non_null_count": 53228,
+          "null_count": 78,
+          "null_percentage": 0.14632499155817358,
+          "unique_values": 1594,
+          "cardinality_ratio": 0.02990282519791393,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_village_category_based_on_agri_parameters_good_average_poor": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2,
+          "cardinality_ratio": 3.7519228604659885e-05,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_nearest_mandi_name": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 895,
+          "cardinality_ratio": 0.0167898548005853,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_proximity_to_nearest_mandi_km": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 368,
+          "cardinality_ratio": 0.006903538063257419,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_proximity_to_nearest_railway_km": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 587,
+          "cardinality_ratio": 0.011011893595467677,
+          "value_types": [
+            "str"
+          ]
+        },
+        "ko22_village_score_based_on_socio_economic_parameters_0_to_100": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 5588,
+          "cardinality_ratio": 0.10482872472141973,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_village_category_based_on_socio_economic_parameters_good_average_poor": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3,
+          "cardinality_ratio": 5.627884290698983e-05,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1324,
+          "cardinality_ratio": 0.024837729336284847,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_ambient_temperature_min_max": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1309,
+          "cardinality_ratio": 0.024556335121749897,
+          "value_types": [
+            "str"
+          ]
+        },
+        "r022_village_category_based_on_agri_parameters_good_average_poor": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2,
+          "cardinality_ratio": 3.7519228604659885e-05,
+          "value_types": [
+            "str"
+          ]
+        },
+        "r022_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1286,
+          "cardinality_ratio": 0.024124863992796307,
+          "value_types": [
+            "str"
+          ]
+        },
+        "r022_ambient_temperature_min_max": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1316,
+          "cardinality_ratio": 0.024687652421866206,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k021_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1324,
+          "cardinality_ratio": 0.024837729336284847,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k021_ambient_temperature_min_max": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1312,
+          "cardinality_ratio": 0.024612613964656888,
+          "value_types": [
+            "str"
+          ]
+        },
+        "r021_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1286,
+          "cardinality_ratio": 0.024124863992796307,
+          "value_types": [
+            "str"
+          ]
+        },
+        "r021_ambient_temperature_min_max": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1312,
+          "cardinality_ratio": 0.024612613964656888,
+          "value_types": [
+            "str"
+          ]
+        },
+        "r020_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1306,
+          "cardinality_ratio": 0.024500056278842906,
+          "value_types": [
+            "str"
+          ]
+        },
+        "r020_ambient_temperature_min_max": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1312,
+          "cardinality_ratio": 0.024612613964656888,
+          "value_types": [
+            "str"
+          ]
+        },
+        "perc_of_house_with_6plus_room": {
+          "dtype": "object",
+          "non_null_count": 53121,
+          "null_count": 185,
+          "null_percentage": 0.34705286459310397,
+          "unique_values": 826,
+          "cardinality_ratio": 0.015495441413724534,
+          "value_types": [
+            "str"
+          ]
+        },
+        "women_15_19_mothers_or_pregnant_at_time_of_survey": {
+          "dtype": "object",
+          "non_null_count": 53121,
+          "null_count": 185,
+          "null_percentage": 0.34705286459310397,
+          "unique_values": 899,
+          "cardinality_ratio": 0.01686489325779462,
+          "value_types": [
+            "str"
+          ]
+        },
+        "perc_of_pop_living_in_hh_electricity": {
+          "dtype": "object",
+          "non_null_count": 53121,
+          "null_count": 185,
+          "null_percentage": 0.34705286459310397,
+          "unique_values": 627,
+          "cardinality_ratio": 0.011762278167560874,
+          "value_types": [
+            "str"
+          ]
+        },
+        "perc_households_with_pucca_house_that_has_more_than_3_rooms": {
+          "dtype": "object",
+          "non_null_count": 53121,
+          "null_count": 185,
+          "null_percentage": 0.34705286459310397,
+          "unique_values": 1458,
+          "cardinality_ratio": 0.02735151765279706,
+          "value_types": [
+            "str"
+          ]
+        },
+        "mat_roof_metal_gi_asbestos_sheets": {
+          "dtype": "object",
+          "non_null_count": 53121,
+          "null_count": 185,
+          "null_percentage": 0.34705286459310397,
+          "unique_values": 2433,
+          "cardinality_ratio": 0.045642141597568756,
+          "value_types": [
+            "str"
+          ]
+        },
+        "perc_of_wall_material_with_burnt_brick": {
+          "dtype": "object",
+          "non_null_count": 53121,
+          "null_count": 185,
+          "null_percentage": 0.34705286459310397,
+          "unique_values": 3442,
+          "cardinality_ratio": 0.06457059242861966,
+          "value_types": [
+            "str"
+          ]
+        },
+        "households_with_improved_sanitation_facility": {
+          "dtype": "object",
+          "non_null_count": 53121,
+          "null_count": 185,
+          "null_percentage": 0.34705286459310397,
+          "unique_values": 1229,
+          "cardinality_ratio": 0.023055565977563502,
+          "value_types": [
+            "str"
+          ]
+        },
+        "perc_households_do_not_have_kcc_with_the_credit_limit_of_50k": {
+          "dtype": "object",
+          "non_null_count": 53121,
+          "null_count": 185,
+          "null_percentage": 0.34705286459310397,
+          "unique_values": 926,
+          "cardinality_ratio": 0.01737140284395753,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_total_geographical_area_in_hectares": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 5522,
+          "cardinality_ratio": 0.10359059017746595,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_net_agri_area_in_ha": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 5488,
+          "cardinality_ratio": 0.10295276329118673,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_net_agri_area_of_total_geog_area": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3463,
+          "cardinality_ratio": 0.0649645443289686,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_irrigated_area_in_2022": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3697,
+          "cardinality_ratio": 0.06935429407571381,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_cropping_density_in_2022": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3771,
+          "cardinality_ratio": 0.07074250553408622,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_agricultural_performance_in_2022": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3335,
+          "cardinality_ratio": 0.06256331369827037,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_agricultural_score_in_2022": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2756,
+          "cardinality_ratio": 0.05170149701722133,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_type_of_soil_in_2022": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 8,
+          "cardinality_ratio": 0.00015007691441863954,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_type_of_water_bodies_in_hectares_2022": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 22,
+          "cardinality_ratio": 0.0004127115146512588,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_agro_ecological_sub_zone_in_2022": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 12,
+          "cardinality_ratio": 0.00022511537162795932,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2022": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1144,
+          "cardinality_ratio": 0.021460998761865455,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2022": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1078,
+          "cardinality_ratio": 0.02022286421791168,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_season_irrigated_area_in_2022": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 4050,
+          "cardinality_ratio": 0.07597643792443627,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_cropping_density_in_2022": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 4181,
+          "cardinality_ratio": 0.07843394739804149,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_agricultural_performance_in_2022": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3113,
+          "cardinality_ratio": 0.05839867932315312,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_agricultural_score_in_2022": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2750,
+          "cardinality_ratio": 0.051588939331407346,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_type_of_soil_in_2022": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 8,
+          "cardinality_ratio": 0.00015007691441863954,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_type_of_water_bodies_in_hectares_2022": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 22,
+          "cardinality_ratio": 0.0004127115146512588,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_agro_ecological_sub_zone_in_2022": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 12,
+          "cardinality_ratio": 0.00022511537162795932,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2022": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1146,
+          "cardinality_ratio": 0.021498517990470117,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2022": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 928,
+          "cardinality_ratio": 0.01740892207256219,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_kharif_season_irrigated_area_in_2021": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3627,
+          "cardinality_ratio": 0.06804112107455071,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_cropping_density_in_2021": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 4170,
+          "cardinality_ratio": 0.07822759164071587,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_agricultural_performance_in_2021": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3062,
+          "cardinality_ratio": 0.05744193899373429,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_agricultural_score_in_2021": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2920,
+          "cardinality_ratio": 0.054778073762803435,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_type_of_soil_in_2021": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 8,
+          "cardinality_ratio": 0.00015007691441863954,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_type_of_water_bodies_in_hectares_2021": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 22,
+          "cardinality_ratio": 0.0004127115146512588,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_agro_ecological_sub_zone_in_2021": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 12,
+          "cardinality_ratio": 0.00022511537162795932,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2021": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1120,
+          "cardinality_ratio": 0.021010768018609537,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2021": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1038,
+          "cardinality_ratio": 0.019472479645818483,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_kharif_season_irrigated_area_in_2021": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 4050,
+          "cardinality_ratio": 0.07597643792443627,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_cropping_density_in_2021": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 4181,
+          "cardinality_ratio": 0.07843394739804149,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_agricultural_performance_in_2021": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3086,
+          "cardinality_ratio": 0.057892169736990205,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_agricultural_score_in_2021": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2572,
+          "cardinality_ratio": 0.048249727985592614,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_type_of_soil_in_2021": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 8,
+          "cardinality_ratio": 0.00015007691441863954,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_type_of_water_bodies_in_hectares_2021": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 22,
+          "cardinality_ratio": 0.0004127115146512588,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_agro_ecological_sub_zone_in_2021": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 12,
+          "cardinality_ratio": 0.00022511537162795932,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2021": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1153,
+          "cardinality_ratio": 0.021629835290586426,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2021": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1025,
+          "cardinality_ratio": 0.019228604659888193,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_kharif_season_irrigated_area_in_2020": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3665,
+          "cardinality_ratio": 0.06875398641803925,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_cropping_density_in_2020": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 4150,
+          "cardinality_ratio": 0.07785239935466927,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_agricultural_performance_in_2020": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3326,
+          "cardinality_ratio": 0.06239447716954939,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_agricultural_score_in_2020": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2930,
+          "cardinality_ratio": 0.054965669905826735,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_type_of_soil_in_2020": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 8,
+          "cardinality_ratio": 0.00015007691441863954,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_type_of_water_bodies_in_hectares_2020": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 22,
+          "cardinality_ratio": 0.0004127115146512588,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_agro_ecological_sub_zone_in_2020": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 12,
+          "cardinality_ratio": 0.00022511537162795932,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2020": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1138,
+          "cardinality_ratio": 0.021348441076051477,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2020": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1045,
+          "cardinality_ratio": 0.019603796945934792,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_kharif_season_irrigated_area_in_2020": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3565,
+          "cardinality_ratio": 0.06687802498780625,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_cropping_density_in_2020": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 4163,
+          "cardinality_ratio": 0.07809627434059956,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_agricultural_performance_in_2020": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3191,
+          "cardinality_ratio": 0.05986192923873485,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_agricultural_score_in_2020": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2645,
+          "cardinality_ratio": 0.0496191798296627,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_type_of_soil_in_2020": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 8,
+          "cardinality_ratio": 0.00015007691441863954,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_type_of_water_bodies_in_hectares_2020": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 22,
+          "cardinality_ratio": 0.0004127115146512588,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_agro_ecological_sub_zone_in_2020": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 12,
+          "cardinality_ratio": 0.00022511537162795932,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2020": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1139,
+          "cardinality_ratio": 0.021367200690353805,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2020": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1007,
+          "cardinality_ratio": 0.018890931602446252,
+          "value_types": [
+            "str"
+          ]
+        },
+        "night_light_index": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 49,
+          "cardinality_ratio": 0.0009192211008141672,
+          "value_types": [
+            "str"
+          ]
+        },
+        "village_score_based_on_socio_economic_parameters_non_normalised": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 5588,
+          "cardinality_ratio": 0.10482872472141973,
+          "value_types": [
+            "str"
+          ]
+        },
+        "village_score_based_on_socio_economic_parameters_0_to_100": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 5588,
+          "cardinality_ratio": 0.10482872472141973,
+          "value_types": [
+            "str"
+          ]
+        },
+        "village_category_based_on_socio_economic_parameters_good_average_poor": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3,
+          "cardinality_ratio": 5.627884290698983e-05,
+          "value_types": [
+            "str"
+          ]
+        },
+        "land_holding_index_source_total_agri_area_no_of_people": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 5588,
+          "cardinality_ratio": 0.10482872472141973,
+          "value_types": [
+            "str"
+          ]
+        },
+        "road_density_km_sqkm": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1154,
+          "cardinality_ratio": 0.021648594904888754,
+          "value_types": [
+            "str"
+          ]
+        },
+        "target_income": {
+          "dtype": "object",
+          "non_null_count": 53306,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 4649,
+          "cardinality_ratio": 0.0872134468915319,
+          "value_types": [
+            "str"
+          ]
+        }
+      },
+      "type_distribution": {
+        "object": 105
+      },
+      "problematic_columns": [],
+      "mixed_type_columns": [],
+      "high_cardinality_columns": [
+        "farmerid"
+      ],
+      "potential_categorical_columns": [
+        "state",
+        "region",
+        "sex",
+        "marital_status",
+        "address_type",
+        "ownership",
+        "no_of_active_loan_in_bureau",
+        "k022_village_category_based_on_agri_parameters_good_average_poor",
+        "k022_village_category_based_on_socio_economic_parameters_good_average_poor",
+        "r022_village_category_based_on_agri_parameters_good_average_poor",
+        "kharif_seasons_type_of_soil_in_2022",
+        "kharif_seasons_type_of_water_bodies_in_hectares_2022",
+        "kharif_seasons_agro_ecological_sub_zone_in_2022",
+        "rabi_seasons_type_of_soil_in_2022",
+        "rabi_seasons_type_of_water_bodies_in_hectares_2022",
+        "rabi_seasons_agro_ecological_sub_zone_in_2022",
+        "rabi_seasons_type_of_soil_in_2021",
+        "rabi_seasons_type_of_water_bodies_in_hectares_2021",
+        "rabi_seasons_agro_ecological_sub_zone_in_2021",
+        "kharif_seasons_type_of_soil_in_2021",
+        "kharif_seasons_type_of_water_bodies_in_hectares_2021",
+        "kharif_seasons_agro_ecological_sub_zone_in_2021",
+        "kharif_seasons_type_of_soil_in_2020",
+        "kharif_seasons_type_of_water_bodies_in_hectares_2020",
+        "kharif_seasons_agro_ecological_sub_zone_in_2020",
+        "rabi_seasons_type_of_soil_in_2020",
+        "rabi_seasons_type_of_water_bodies_in_hectares_2020",
+        "rabi_seasons_agro_ecological_sub_zone_in_2020",
+        "night_light_index",
+        "village_category_based_on_socio_economic_parameters_good_average_poor"
+      ]
+    },
+    "test": {
+      "dataset_name": "test",
+      "total_columns": 104,
+      "data_types": {
+        "farmerid": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 10000,
+          "cardinality_ratio": 1.0,
+          "value_types": [
+            "str"
+          ]
+        },
+        "state": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 16,
+          "cardinality_ratio": 0.0016,
+          "value_types": [
+            "str"
+          ]
+        },
+        "region": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 5,
+          "cardinality_ratio": 0.0005,
+          "value_types": [
+            "str"
+          ]
+        },
+        "sex": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3,
+          "cardinality_ratio": 0.0003,
+          "value_types": [
+            "str"
+          ]
+        },
+        "city": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1824,
+          "cardinality_ratio": 0.1824,
+          "value_types": [
+            "str"
+          ]
+        },
+        "zipcode": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2735,
+          "cardinality_ratio": 0.2735,
+          "value_types": [
+            "str"
+          ]
+        },
+        "district": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 355,
+          "cardinality_ratio": 0.0355,
+          "value_types": [
+            "str"
+          ]
+        },
+        "village": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3334,
+          "cardinality_ratio": 0.3334,
+          "value_types": [
+            "str"
+          ]
+        },
+        "marital_status": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2,
+          "cardinality_ratio": 0.0002,
+          "value_types": [
+            "str"
+          ]
+        },
+        "location": {
+          "dtype": "object",
+          "non_null_count": 6425,
+          "null_count": 3575,
+          "null_percentage": 35.75,
+          "unique_values": 6408,
+          "cardinality_ratio": 0.6408,
+          "value_types": [
+            "str"
+          ]
+        },
+        "address_type": {
+          "dtype": "object",
+          "non_null_count": 6425,
+          "null_count": 3575,
+          "null_percentage": 35.75,
+          "unique_values": 3,
+          "cardinality_ratio": 0.0003,
+          "value_types": [
+            "str"
+          ]
+        },
+        "ownership": {
+          "dtype": "object",
+          "non_null_count": 6425,
+          "null_count": 3575,
+          "null_percentage": 35.75,
+          "unique_values": 3,
+          "cardinality_ratio": 0.0003,
+          "value_types": [
+            "str"
+          ]
+        },
+        "no_of_active_loan_in_bureau": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 28,
+          "cardinality_ratio": 0.0028,
+          "value_types": [
+            "str"
+          ]
+        },
+        "avg_disbursement_amount_bureau": {
+          "dtype": "object",
+          "non_null_count": 5731,
+          "null_count": 4269,
+          "null_percentage": 42.69,
+          "unique_values": 3851,
+          "cardinality_ratio": 0.3851,
+          "value_types": [
+            "str"
+          ]
+        },
+        "non_agriculture_income": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1071,
+          "cardinality_ratio": 0.1071,
+          "value_types": [
+            "str"
+          ]
+        },
+        "total_land_for_agriculture": {
+          "dtype": "object",
+          "non_null_count": 9980,
+          "null_count": 20,
+          "null_percentage": 0.2,
+          "unique_values": 524,
+          "cardinality_ratio": 0.0524,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_village_category_based_on_agri_parameters_good_average_poor": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2,
+          "cardinality_ratio": 0.0002,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_nearest_mandi_name": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 783,
+          "cardinality_ratio": 0.0783,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_proximity_to_nearest_mandi_km": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 339,
+          "cardinality_ratio": 0.0339,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_proximity_to_nearest_railway_km": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 532,
+          "cardinality_ratio": 0.0532,
+          "value_types": [
+            "str"
+          ]
+        },
+        "ko22_village_score_based_on_socio_economic_parameters_0_to_100": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3289,
+          "cardinality_ratio": 0.3289,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_village_category_based_on_socio_economic_parameters_good_average_poor": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3,
+          "cardinality_ratio": 0.0003,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1103,
+          "cardinality_ratio": 0.1103,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_ambient_temperature_min_max": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1094,
+          "cardinality_ratio": 0.1094,
+          "value_types": [
+            "str"
+          ]
+        },
+        "r022_village_category_based_on_agri_parameters_good_average_poor": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2,
+          "cardinality_ratio": 0.0002,
+          "value_types": [
+            "str"
+          ]
+        },
+        "r022_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1077,
+          "cardinality_ratio": 0.1077,
+          "value_types": [
+            "str"
+          ]
+        },
+        "r022_ambient_temperature_min_max": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1096,
+          "cardinality_ratio": 0.1096,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k021_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1101,
+          "cardinality_ratio": 0.1101,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k021_ambient_temperature_min_max": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1095,
+          "cardinality_ratio": 0.1095,
+          "value_types": [
+            "str"
+          ]
+        },
+        "r021_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1072,
+          "cardinality_ratio": 0.1072,
+          "value_types": [
+            "str"
+          ]
+        },
+        "r021_ambient_temperature_min_max": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1094,
+          "cardinality_ratio": 0.1094,
+          "value_types": [
+            "str"
+          ]
+        },
+        "r020_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1090,
+          "cardinality_ratio": 0.109,
+          "value_types": [
+            "str"
+          ]
+        },
+        "r020_ambient_temperature_min_max": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1094,
+          "cardinality_ratio": 0.1094,
+          "value_types": [
+            "str"
+          ]
+        },
+        "perc_of_house_with_6plus_room": {
+          "dtype": "object",
+          "non_null_count": 9967,
+          "null_count": 33,
+          "null_percentage": 0.33,
+          "unique_values": 614,
+          "cardinality_ratio": 0.0614,
+          "value_types": [
+            "str"
+          ]
+        },
+        "women_15_19_mothers_or_pregnant_at_time_of_survey": {
+          "dtype": "object",
+          "non_null_count": 9967,
+          "null_count": 33,
+          "null_percentage": 0.33,
+          "unique_values": 648,
+          "cardinality_ratio": 0.0648,
+          "value_types": [
+            "str"
+          ]
+        },
+        "perc_of_pop_living_in_hh_electricity": {
+          "dtype": "object",
+          "non_null_count": 9967,
+          "null_count": 33,
+          "null_percentage": 0.33,
+          "unique_values": 437,
+          "cardinality_ratio": 0.0437,
+          "value_types": [
+            "str"
+          ]
+        },
+        "perc_households_with_pucca_house_that_has_more_than_3_rooms": {
+          "dtype": "object",
+          "non_null_count": 9967,
+          "null_count": 33,
+          "null_percentage": 0.33,
+          "unique_values": 1157,
+          "cardinality_ratio": 0.1157,
+          "value_types": [
+            "str"
+          ]
+        },
+        "mat_roof_metal_gi_asbestos_sheets": {
+          "dtype": "object",
+          "non_null_count": 9967,
+          "null_count": 33,
+          "null_percentage": 0.33,
+          "unique_values": 1767,
+          "cardinality_ratio": 0.1767,
+          "value_types": [
+            "str"
+          ]
+        },
+        "perc_of_wall_material_with_burnt_brick": {
+          "dtype": "object",
+          "non_null_count": 9967,
+          "null_count": 33,
+          "null_percentage": 0.33,
+          "unique_values": 2264,
+          "cardinality_ratio": 0.2264,
+          "value_types": [
+            "str"
+          ]
+        },
+        "households_with_improved_sanitation_facility": {
+          "dtype": "object",
+          "non_null_count": 9967,
+          "null_count": 33,
+          "null_percentage": 0.33,
+          "unique_values": 841,
+          "cardinality_ratio": 0.0841,
+          "value_types": [
+            "str"
+          ]
+        },
+        "perc_households_do_not_have_kcc_with_the_credit_limit_of_50k": {
+          "dtype": "object",
+          "non_null_count": 9967,
+          "null_count": 33,
+          "null_percentage": 0.33,
+          "unique_values": 780,
+          "cardinality_ratio": 0.078,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_total_geographical_area_in_hectares": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3261,
+          "cardinality_ratio": 0.3261,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_net_agri_area_in_ha": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3252,
+          "cardinality_ratio": 0.3252,
+          "value_types": [
+            "str"
+          ]
+        },
+        "k022_net_agri_area_of_total_geog_area": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2469,
+          "cardinality_ratio": 0.2469,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_irrigated_area_in_2022": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2504,
+          "cardinality_ratio": 0.2504,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_cropping_density_in_2022": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2568,
+          "cardinality_ratio": 0.2568,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_agricultural_performance_in_2022": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2345,
+          "cardinality_ratio": 0.2345,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_agricultural_score_in_2022": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2074,
+          "cardinality_ratio": 0.2074,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_type_of_soil_in_2022": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 8,
+          "cardinality_ratio": 0.0008,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_type_of_water_bodies_in_hectares_2022": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 20,
+          "cardinality_ratio": 0.002,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_agro_ecological_sub_zone_in_2022": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 12,
+          "cardinality_ratio": 0.0012,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2022": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 979,
+          "cardinality_ratio": 0.0979,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2022": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 920,
+          "cardinality_ratio": 0.092,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_season_irrigated_area_in_2022": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2706,
+          "cardinality_ratio": 0.2706,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_cropping_density_in_2022": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2744,
+          "cardinality_ratio": 0.2744,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_agricultural_performance_in_2022": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2287,
+          "cardinality_ratio": 0.2287,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_agricultural_score_in_2022": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2096,
+          "cardinality_ratio": 0.2096,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_type_of_soil_in_2022": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 8,
+          "cardinality_ratio": 0.0008,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_type_of_water_bodies_in_hectares_2022": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 20,
+          "cardinality_ratio": 0.002,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_agro_ecological_sub_zone_in_2022": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 12,
+          "cardinality_ratio": 0.0012,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2022": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 981,
+          "cardinality_ratio": 0.0981,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2022": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 796,
+          "cardinality_ratio": 0.0796,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_kharif_season_irrigated_area_in_2021": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2497,
+          "cardinality_ratio": 0.2497,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_cropping_density_in_2021": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2743,
+          "cardinality_ratio": 0.2743,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_agricultural_performance_in_2021": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2253,
+          "cardinality_ratio": 0.2253,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_agricultural_score_in_2021": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2183,
+          "cardinality_ratio": 0.2183,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_type_of_soil_in_2021": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 8,
+          "cardinality_ratio": 0.0008,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_type_of_water_bodies_in_hectares_2021": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 20,
+          "cardinality_ratio": 0.002,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_agro_ecological_sub_zone_in_2021": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 12,
+          "cardinality_ratio": 0.0012,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2021": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 956,
+          "cardinality_ratio": 0.0956,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2021": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 887,
+          "cardinality_ratio": 0.0887,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_kharif_season_irrigated_area_in_2021": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2706,
+          "cardinality_ratio": 0.2706,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_cropping_density_in_2021": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2744,
+          "cardinality_ratio": 0.2744,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_agricultural_performance_in_2021": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2232,
+          "cardinality_ratio": 0.2232,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_agricultural_score_in_2021": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 1982,
+          "cardinality_ratio": 0.1982,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_type_of_soil_in_2021": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 8,
+          "cardinality_ratio": 0.0008,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_type_of_water_bodies_in_hectares_2021": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 20,
+          "cardinality_ratio": 0.002,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_agro_ecological_sub_zone_in_2021": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 12,
+          "cardinality_ratio": 0.0012,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2021": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 981,
+          "cardinality_ratio": 0.0981,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2021": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 878,
+          "cardinality_ratio": 0.0878,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_kharif_season_irrigated_area_in_2020": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2522,
+          "cardinality_ratio": 0.2522,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_cropping_density_in_2020": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2740,
+          "cardinality_ratio": 0.274,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_agricultural_performance_in_2020": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2364,
+          "cardinality_ratio": 0.2364,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_agricultural_score_in_2020": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2185,
+          "cardinality_ratio": 0.2185,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_type_of_soil_in_2020": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 8,
+          "cardinality_ratio": 0.0008,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_type_of_water_bodies_in_hectares_2020": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 20,
+          "cardinality_ratio": 0.002,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_agro_ecological_sub_zone_in_2020": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 12,
+          "cardinality_ratio": 0.0012,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2020": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 975,
+          "cardinality_ratio": 0.0975,
+          "value_types": [
+            "str"
+          ]
+        },
+        "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2020": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 906,
+          "cardinality_ratio": 0.0906,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_kharif_season_irrigated_area_in_2020": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2467,
+          "cardinality_ratio": 0.2467,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_cropping_density_in_2020": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2751,
+          "cardinality_ratio": 0.2751,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_agricultural_performance_in_2020": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2311,
+          "cardinality_ratio": 0.2311,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_agricultural_score_in_2020": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 2034,
+          "cardinality_ratio": 0.2034,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_type_of_soil_in_2020": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 8,
+          "cardinality_ratio": 0.0008,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_type_of_water_bodies_in_hectares_2020": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 20,
+          "cardinality_ratio": 0.002,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_agro_ecological_sub_zone_in_2020": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 12,
+          "cardinality_ratio": 0.0012,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2020": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 972,
+          "cardinality_ratio": 0.0972,
+          "value_types": [
+            "str"
+          ]
+        },
+        "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2020": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 885,
+          "cardinality_ratio": 0.0885,
+          "value_types": [
+            "str"
+          ]
+        },
+        "night_light_index": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 46,
+          "cardinality_ratio": 0.0046,
+          "value_types": [
+            "str"
+          ]
+        },
+        "village_score_based_on_socio_economic_parameters_non_normalised": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3289,
+          "cardinality_ratio": 0.3289,
+          "value_types": [
+            "str"
+          ]
+        },
+        "village_score_based_on_socio_economic_parameters_0_to_100": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3289,
+          "cardinality_ratio": 0.3289,
+          "value_types": [
+            "str"
+          ]
+        },
+        "village_category_based_on_socio_economic_parameters_good_average_poor": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3,
+          "cardinality_ratio": 0.0003,
+          "value_types": [
+            "str"
+          ]
+        },
+        "land_holding_index_source_total_agri_area_no_of_people": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 3289,
+          "cardinality_ratio": 0.3289,
+          "value_types": [
+            "str"
+          ]
+        },
+        "road_density_km_sqkm": {
+          "dtype": "object",
+          "non_null_count": 10000,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_values": 881,
+          "cardinality_ratio": 0.0881,
+          "value_types": [
+            "str"
+          ]
+        }
+      },
+      "type_distribution": {
+        "object": 104
+      },
+      "problematic_columns": [],
+      "mixed_type_columns": [],
+      "high_cardinality_columns": [
+        "farmerid"
+      ],
+      "potential_categorical_columns": [
+        "state",
+        "region",
+        "sex",
+        "marital_status",
+        "address_type",
+        "ownership",
+        "no_of_active_loan_in_bureau",
+        "k022_village_category_based_on_agri_parameters_good_average_poor",
+        "k022_village_category_based_on_socio_economic_parameters_good_average_poor",
+        "r022_village_category_based_on_agri_parameters_good_average_poor",
+        "kharif_seasons_type_of_soil_in_2022",
+        "kharif_seasons_type_of_water_bodies_in_hectares_2022",
+        "kharif_seasons_agro_ecological_sub_zone_in_2022",
+        "rabi_seasons_type_of_soil_in_2022",
+        "rabi_seasons_type_of_water_bodies_in_hectares_2022",
+        "rabi_seasons_agro_ecological_sub_zone_in_2022",
+        "rabi_seasons_type_of_soil_in_2021",
+        "rabi_seasons_type_of_water_bodies_in_hectares_2021",
+        "rabi_seasons_agro_ecological_sub_zone_in_2021",
+        "kharif_seasons_type_of_soil_in_2021",
+        "kharif_seasons_type_of_water_bodies_in_hectares_2021",
+        "kharif_seasons_agro_ecological_sub_zone_in_2021",
+        "kharif_seasons_type_of_soil_in_2020",
+        "kharif_seasons_type_of_water_bodies_in_hectares_2020",
+        "kharif_seasons_agro_ecological_sub_zone_in_2020",
+        "rabi_seasons_type_of_soil_in_2020",
+        "rabi_seasons_type_of_water_bodies_in_hectares_2020",
+        "rabi_seasons_agro_ecological_sub_zone_in_2020",
+        "night_light_index",
+        "village_category_based_on_socio_economic_parameters_good_average_poor"
+      ]
+    }
+  },
+  "consistency_check": {
+    "timestamp": "2025-09-22T21:10:06.603128",
+    "shape_comparison": {
+      "train_shape": [
+        53306,
+        105
+      ],
+      "test_shape": [
+        10000,
+        104
+      ],
+      "same_columns": false
+    },
+    "column_consistency": {
+      "common_columns": 104,
+      "train_only": [
+        "target_income"
+      ],
+      "test_only": [],
+      "perfect_match": false
+    },
+    "dtype_consistency": {
+      "matching_dtypes": 104,
+      "mismatched_dtypes": 0,
+      "mismatches": []
+    },
+    "value_range_consistency": {
+      "columns_checked": 0,
+      "range_issues": 0,
+      "issues_detail": []
+    },
+    "categorical_consistency": {}
+  },
+  "quality_reports": {
+    "train": {
+      "dataset_name": "training",
+      "timestamp": "2025-09-22T21:10:06.704030",
+      "basic_stats": {
+        "rows": 53306,
+        "columns": 105,
+        "total_cells": 5597130,
+        "missing_cells": 81432,
+        "missing_percentage": 1.454888487492697,
+        "memory_usage_mb": 323.48381423950195
+      },
+      "column_quality": {
+        "farmerid": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 53279,
+          "completeness_score": 1.0
+        },
+        "state": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 17,
+          "completeness_score": 1.0
+        },
+        "region": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 5,
+          "completeness_score": 1.0
+        },
+        "sex": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2,
+          "completeness_score": 1.0
+        },
+        "city": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2760,
+          "completeness_score": 1.0
+        },
+        "zipcode": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 4632,
+          "completeness_score": 1.0
+        },
+        "district": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 405,
+          "completeness_score": 1.0
+        },
+        "village": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 5774,
+          "completeness_score": 1.0
+        },
+        "marital_status": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3,
+          "completeness_score": 1.0
+        },
+        "location": {
+          "dtype": "object",
+          "missing_count": 18950,
+          "missing_percentage": 35.549469102915246,
+          "unique_values": 34002,
+          "completeness_score": 0.6445053089708476
+        },
+        "address_type": {
+          "dtype": "object",
+          "missing_count": 18950,
+          "missing_percentage": 35.549469102915246,
+          "unique_values": 3,
+          "completeness_score": 0.6445053089708476
+        },
+        "ownership": {
+          "dtype": "object",
+          "missing_count": 18950,
+          "missing_percentage": 35.549469102915246,
+          "unique_values": 3,
+          "completeness_score": 0.6445053089708476
+        },
+        "no_of_active_loan_in_bureau": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 34,
+          "completeness_score": 1.0
+        },
+        "avg_disbursement_amount_bureau": {
+          "dtype": "object",
+          "missing_count": 23024,
+          "missing_percentage": 43.192135969684465,
+          "unique_values": 16017,
+          "completeness_score": 0.5680786403031554
+        },
+        "non_agriculture_income": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3134,
+          "completeness_score": 1.0
+        },
+        "total_land_for_agriculture": {
+          "dtype": "object",
+          "missing_count": 78,
+          "missing_percentage": 0.14632499155817358,
+          "unique_values": 1594,
+          "completeness_score": 0.9985367500844182
+        },
+        "k022_village_category_based_on_agri_parameters_good_average_poor": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2,
+          "completeness_score": 1.0
+        },
+        "k022_nearest_mandi_name": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 895,
+          "completeness_score": 1.0
+        },
+        "k022_proximity_to_nearest_mandi_km": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 368,
+          "completeness_score": 1.0
+        },
+        "k022_proximity_to_nearest_railway_km": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 587,
+          "completeness_score": 1.0
+        },
+        "ko22_village_score_based_on_socio_economic_parameters_0_to_100": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 5588,
+          "completeness_score": 1.0
+        },
+        "k022_village_category_based_on_socio_economic_parameters_good_average_poor": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3,
+          "completeness_score": 1.0
+        },
+        "k022_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1324,
+          "completeness_score": 1.0
+        },
+        "k022_ambient_temperature_min_max": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1309,
+          "completeness_score": 1.0
+        },
+        "r022_village_category_based_on_agri_parameters_good_average_poor": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2,
+          "completeness_score": 1.0
+        },
+        "r022_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1286,
+          "completeness_score": 1.0
+        },
+        "r022_ambient_temperature_min_max": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1316,
+          "completeness_score": 1.0
+        },
+        "k021_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1324,
+          "completeness_score": 1.0
+        },
+        "k021_ambient_temperature_min_max": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1312,
+          "completeness_score": 1.0
+        },
+        "r021_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1286,
+          "completeness_score": 1.0
+        },
+        "r021_ambient_temperature_min_max": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1312,
+          "completeness_score": 1.0
+        },
+        "r020_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1306,
+          "completeness_score": 1.0
+        },
+        "r020_ambient_temperature_min_max": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1312,
+          "completeness_score": 1.0
+        },
+        "perc_of_house_with_6plus_room": {
+          "dtype": "object",
+          "missing_count": 185,
+          "missing_percentage": 0.34705286459310397,
+          "unique_values": 826,
+          "completeness_score": 0.996529471354069
+        },
+        "women_15_19_mothers_or_pregnant_at_time_of_survey": {
+          "dtype": "object",
+          "missing_count": 185,
+          "missing_percentage": 0.34705286459310397,
+          "unique_values": 899,
+          "completeness_score": 0.996529471354069
+        },
+        "perc_of_pop_living_in_hh_electricity": {
+          "dtype": "object",
+          "missing_count": 185,
+          "missing_percentage": 0.34705286459310397,
+          "unique_values": 627,
+          "completeness_score": 0.996529471354069
+        },
+        "perc_households_with_pucca_house_that_has_more_than_3_rooms": {
+          "dtype": "object",
+          "missing_count": 185,
+          "missing_percentage": 0.34705286459310397,
+          "unique_values": 1458,
+          "completeness_score": 0.996529471354069
+        },
+        "mat_roof_metal_gi_asbestos_sheets": {
+          "dtype": "object",
+          "missing_count": 185,
+          "missing_percentage": 0.34705286459310397,
+          "unique_values": 2433,
+          "completeness_score": 0.996529471354069
+        },
+        "perc_of_wall_material_with_burnt_brick": {
+          "dtype": "object",
+          "missing_count": 185,
+          "missing_percentage": 0.34705286459310397,
+          "unique_values": 3442,
+          "completeness_score": 0.996529471354069
+        },
+        "households_with_improved_sanitation_facility": {
+          "dtype": "object",
+          "missing_count": 185,
+          "missing_percentage": 0.34705286459310397,
+          "unique_values": 1229,
+          "completeness_score": 0.996529471354069
+        },
+        "perc_households_do_not_have_kcc_with_the_credit_limit_of_50k": {
+          "dtype": "object",
+          "missing_count": 185,
+          "missing_percentage": 0.34705286459310397,
+          "unique_values": 926,
+          "completeness_score": 0.996529471354069
+        },
+        "k022_total_geographical_area_in_hectares": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 5522,
+          "completeness_score": 1.0
+        },
+        "k022_net_agri_area_in_ha": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 5488,
+          "completeness_score": 1.0
+        },
+        "k022_net_agri_area_of_total_geog_area": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3463,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_irrigated_area_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3697,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_cropping_density_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3771,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_agricultural_performance_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3335,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_agricultural_score_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2756,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_type_of_soil_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 8,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_type_of_water_bodies_in_hectares_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 22,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_agro_ecological_sub_zone_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 12,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1144,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1078,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_season_irrigated_area_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 4050,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_cropping_density_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 4181,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_agricultural_performance_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3113,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_agricultural_score_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2750,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_type_of_soil_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 8,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_type_of_water_bodies_in_hectares_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 22,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_agro_ecological_sub_zone_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 12,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1146,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 928,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_kharif_season_irrigated_area_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3627,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_cropping_density_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 4170,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_agricultural_performance_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3062,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_agricultural_score_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2920,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_type_of_soil_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 8,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_type_of_water_bodies_in_hectares_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 22,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_agro_ecological_sub_zone_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 12,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1120,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1038,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_kharif_season_irrigated_area_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 4050,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_cropping_density_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 4181,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_agricultural_performance_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3086,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_agricultural_score_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2572,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_type_of_soil_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 8,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_type_of_water_bodies_in_hectares_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 22,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_agro_ecological_sub_zone_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 12,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1153,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1025,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_kharif_season_irrigated_area_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3665,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_cropping_density_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 4150,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_agricultural_performance_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3326,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_agricultural_score_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2930,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_type_of_soil_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 8,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_type_of_water_bodies_in_hectares_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 22,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_agro_ecological_sub_zone_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 12,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1138,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1045,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_kharif_season_irrigated_area_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3565,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_cropping_density_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 4163,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_agricultural_performance_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3191,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_agricultural_score_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2645,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_type_of_soil_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 8,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_type_of_water_bodies_in_hectares_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 22,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_agro_ecological_sub_zone_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 12,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1139,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1007,
+          "completeness_score": 1.0
+        },
+        "night_light_index": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 49,
+          "completeness_score": 1.0
+        },
+        "village_score_based_on_socio_economic_parameters_non_normalised": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 5588,
+          "completeness_score": 1.0
+        },
+        "village_score_based_on_socio_economic_parameters_0_to_100": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 5588,
+          "completeness_score": 1.0
+        },
+        "village_category_based_on_socio_economic_parameters_good_average_poor": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3,
+          "completeness_score": 1.0
+        },
+        "land_holding_index_source_total_agri_area_no_of_people": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 5588,
+          "completeness_score": 1.0
+        },
+        "road_density_km_sqkm": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1154,
+          "completeness_score": 1.0
+        },
+        "target_income": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 4649,
+          "completeness_score": 1.0
+        }
+      },
+      "data_completeness": {
+        "columns_with_missing": 13,
+        "complete_columns": 92,
+        "worst_columns": {
+          "avg_disbursement_amount_bureau": 23024,
+          "address_type": 18950,
+          "ownership": 18950,
+          "location": 18950,
+          "mat_roof_metal_gi_asbestos_sheets": 185
+        }
+      },
+      "potential_issues": []
+    },
+    "test": {
+      "dataset_name": "test",
+      "timestamp": "2025-09-22T21:10:08.044220",
+      "basic_stats": {
+        "rows": 10000,
+        "columns": 104,
+        "total_cells": 1040000,
+        "missing_cells": 15278,
+        "missing_percentage": 1.4690384615384615,
+        "memory_usage_mb": 60.178833961486816
+      },
+      "column_quality": {
+        "farmerid": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 10000,
+          "completeness_score": 1.0
+        },
+        "state": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 16,
+          "completeness_score": 1.0
+        },
+        "region": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 5,
+          "completeness_score": 1.0
+        },
+        "sex": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3,
+          "completeness_score": 1.0
+        },
+        "city": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1824,
+          "completeness_score": 1.0
+        },
+        "zipcode": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2735,
+          "completeness_score": 1.0
+        },
+        "district": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 355,
+          "completeness_score": 1.0
+        },
+        "village": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3334,
+          "completeness_score": 1.0
+        },
+        "marital_status": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2,
+          "completeness_score": 1.0
+        },
+        "location": {
+          "dtype": "object",
+          "missing_count": 3575,
+          "missing_percentage": 35.75,
+          "unique_values": 6408,
+          "completeness_score": 0.6425
+        },
+        "address_type": {
+          "dtype": "object",
+          "missing_count": 3575,
+          "missing_percentage": 35.75,
+          "unique_values": 3,
+          "completeness_score": 0.6425
+        },
+        "ownership": {
+          "dtype": "object",
+          "missing_count": 3575,
+          "missing_percentage": 35.75,
+          "unique_values": 3,
+          "completeness_score": 0.6425
+        },
+        "no_of_active_loan_in_bureau": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 28,
+          "completeness_score": 1.0
+        },
+        "avg_disbursement_amount_bureau": {
+          "dtype": "object",
+          "missing_count": 4269,
+          "missing_percentage": 42.69,
+          "unique_values": 3851,
+          "completeness_score": 0.5731
+        },
+        "non_agriculture_income": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1071,
+          "completeness_score": 1.0
+        },
+        "total_land_for_agriculture": {
+          "dtype": "object",
+          "missing_count": 20,
+          "missing_percentage": 0.2,
+          "unique_values": 524,
+          "completeness_score": 0.998
+        },
+        "k022_village_category_based_on_agri_parameters_good_average_poor": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2,
+          "completeness_score": 1.0
+        },
+        "k022_nearest_mandi_name": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 783,
+          "completeness_score": 1.0
+        },
+        "k022_proximity_to_nearest_mandi_km": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 339,
+          "completeness_score": 1.0
+        },
+        "k022_proximity_to_nearest_railway_km": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 532,
+          "completeness_score": 1.0
+        },
+        "ko22_village_score_based_on_socio_economic_parameters_0_to_100": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3289,
+          "completeness_score": 1.0
+        },
+        "k022_village_category_based_on_socio_economic_parameters_good_average_poor": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3,
+          "completeness_score": 1.0
+        },
+        "k022_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1103,
+          "completeness_score": 1.0
+        },
+        "k022_ambient_temperature_min_max": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1094,
+          "completeness_score": 1.0
+        },
+        "r022_village_category_based_on_agri_parameters_good_average_poor": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2,
+          "completeness_score": 1.0
+        },
+        "r022_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1077,
+          "completeness_score": 1.0
+        },
+        "r022_ambient_temperature_min_max": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1096,
+          "completeness_score": 1.0
+        },
+        "k021_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1101,
+          "completeness_score": 1.0
+        },
+        "k021_ambient_temperature_min_max": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1095,
+          "completeness_score": 1.0
+        },
+        "r021_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1072,
+          "completeness_score": 1.0
+        },
+        "r021_ambient_temperature_min_max": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1094,
+          "completeness_score": 1.0
+        },
+        "r020_seasonal_average_rainfall_mm": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1090,
+          "completeness_score": 1.0
+        },
+        "r020_ambient_temperature_min_max": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1094,
+          "completeness_score": 1.0
+        },
+        "perc_of_house_with_6plus_room": {
+          "dtype": "object",
+          "missing_count": 33,
+          "missing_percentage": 0.33,
+          "unique_values": 614,
+          "completeness_score": 0.9967
+        },
+        "women_15_19_mothers_or_pregnant_at_time_of_survey": {
+          "dtype": "object",
+          "missing_count": 33,
+          "missing_percentage": 0.33,
+          "unique_values": 648,
+          "completeness_score": 0.9967
+        },
+        "perc_of_pop_living_in_hh_electricity": {
+          "dtype": "object",
+          "missing_count": 33,
+          "missing_percentage": 0.33,
+          "unique_values": 437,
+          "completeness_score": 0.9967
+        },
+        "perc_households_with_pucca_house_that_has_more_than_3_rooms": {
+          "dtype": "object",
+          "missing_count": 33,
+          "missing_percentage": 0.33,
+          "unique_values": 1157,
+          "completeness_score": 0.9967
+        },
+        "mat_roof_metal_gi_asbestos_sheets": {
+          "dtype": "object",
+          "missing_count": 33,
+          "missing_percentage": 0.33,
+          "unique_values": 1767,
+          "completeness_score": 0.9967
+        },
+        "perc_of_wall_material_with_burnt_brick": {
+          "dtype": "object",
+          "missing_count": 33,
+          "missing_percentage": 0.33,
+          "unique_values": 2264,
+          "completeness_score": 0.9967
+        },
+        "households_with_improved_sanitation_facility": {
+          "dtype": "object",
+          "missing_count": 33,
+          "missing_percentage": 0.33,
+          "unique_values": 841,
+          "completeness_score": 0.9967
+        },
+        "perc_households_do_not_have_kcc_with_the_credit_limit_of_50k": {
+          "dtype": "object",
+          "missing_count": 33,
+          "missing_percentage": 0.33,
+          "unique_values": 780,
+          "completeness_score": 0.9967
+        },
+        "k022_total_geographical_area_in_hectares": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3261,
+          "completeness_score": 1.0
+        },
+        "k022_net_agri_area_in_ha": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3252,
+          "completeness_score": 1.0
+        },
+        "k022_net_agri_area_of_total_geog_area": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2469,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_irrigated_area_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2504,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_cropping_density_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2568,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_agricultural_performance_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2345,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_agricultural_score_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2074,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_type_of_soil_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 8,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_type_of_water_bodies_in_hectares_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 20,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_agro_ecological_sub_zone_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 12,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 979,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 920,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_season_irrigated_area_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2706,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_cropping_density_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2744,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_agricultural_performance_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2287,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_agricultural_score_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2096,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_type_of_soil_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 8,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_type_of_water_bodies_in_hectares_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 20,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_agro_ecological_sub_zone_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 12,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 981,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2022": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 796,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_kharif_season_irrigated_area_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2497,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_cropping_density_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2743,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_agricultural_performance_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2253,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_agricultural_score_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2183,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_type_of_soil_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 8,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_type_of_water_bodies_in_hectares_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 20,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_agro_ecological_sub_zone_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 12,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 956,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 887,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_kharif_season_irrigated_area_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2706,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_cropping_density_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2744,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_agricultural_performance_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2232,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_agricultural_score_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 1982,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_type_of_soil_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 8,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_type_of_water_bodies_in_hectares_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 20,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_agro_ecological_sub_zone_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 12,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 981,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2021": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 878,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_kharif_season_irrigated_area_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2522,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_cropping_density_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2740,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_agricultural_performance_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2364,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_agricultural_score_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2185,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_type_of_soil_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 8,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_type_of_water_bodies_in_hectares_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 20,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_agro_ecological_sub_zone_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 12,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 975,
+          "completeness_score": 1.0
+        },
+        "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 906,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_kharif_season_irrigated_area_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2467,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_cropping_density_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2751,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_agricultural_performance_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2311,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_agricultural_score_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 2034,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_type_of_soil_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 8,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_type_of_water_bodies_in_hectares_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 20,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_agro_ecological_sub_zone_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 12,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 972,
+          "completeness_score": 1.0
+        },
+        "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2020": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 885,
+          "completeness_score": 1.0
+        },
+        "night_light_index": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 46,
+          "completeness_score": 1.0
+        },
+        "village_score_based_on_socio_economic_parameters_non_normalised": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3289,
+          "completeness_score": 1.0
+        },
+        "village_score_based_on_socio_economic_parameters_0_to_100": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3289,
+          "completeness_score": 1.0
+        },
+        "village_category_based_on_socio_economic_parameters_good_average_poor": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3,
+          "completeness_score": 1.0
+        },
+        "land_holding_index_source_total_agri_area_no_of_people": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3289,
+          "completeness_score": 1.0
+        },
+        "road_density_km_sqkm": {
+          "dtype": "object",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 881,
+          "completeness_score": 1.0
+        }
+      },
+      "data_completeness": {
+        "columns_with_missing": 13,
+        "complete_columns": 91,
+        "worst_columns": {
+          "avg_disbursement_amount_bureau": 4269,
+          "address_type": 3575,
+          "location": 3575,
+          "ownership": 3575,
+          "perc_households_with_pucca_house_that_has_more_than_3_rooms": 33
+        }
+      },
+      "potential_issues": []
+    }
+  },
+  "overall_assessment": {
+    "data_ready_for_processing": true,
+    "major_issues_found": 0,
+    "consistency_score": 1.0,
+    "recommendation": "Proceed with preprocessing - address identified issues during feature engineering"
+  }
+}

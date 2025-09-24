@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "objective": "Predict farmer income with MAPE < 18%",
+    "dataset_size": {
+      "train": 42417,
+      "validation": 10605,
+      "test": 10000,
+      "features": 100
+    },
+    "target_scale": "log1p"
+  },
+  "baseline_performance": "26.53594",
+  "individual_models": {
+    "LightGBM": 19.783284460852997,
+    "XGBoost": "19.840517",
+    "CatBoost": 19.11506505824781,
+    "RandomForest": 19.57241402139585
+  },
+  "ensemble_results": {
+    "Stacking Ensemble": 18.08628619548563,
+    "Weighted Ensemble": 19.103911675057976,
+    "Average Ensemble": 19.111497390874945,
+    "Median Ensemble": 19.199297891601958
+  },
+  "final_model": {
+    "name": "Stacking Ensemble",
+    "mape": 18.08628619548563,
+    "target_achieved": "False",
+    "improvement_over_baseline": 8.449653974802455,
+    "ensemble_used": "True"
+  },
+  "error_analysis": {
+    "mean_absolute_error": 231689.06129665312,
+    "median_absolute_error": 117288.81704858073,
+    "std_error": 446994.2294489033,
+    "accuracy_thresholds": {
+      "within_5pct": 23.866100895803864,
+      "within_10pct": 41.48043375766148,
+      "within_15pct": 55.058934464875065,
+      "within_18pct": 61.687883074021684,
+      "within_25pct": 74.41772748703441
+    }
+  }
+}

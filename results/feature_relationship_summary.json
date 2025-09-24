@@ -1,0 +1,185 @@
+{
+  "target_correlations": {
+    "total_numeric_features": 66,
+    "features_analyzed": 66,
+    "correlation_categories": {
+      "strong_correlations": 1,
+      "moderate_correlations": 0,
+      "weak_correlations": 0,
+      "very_weak_correlations": 65
+    },
+    "top_10_features": [
+      {
+        "feature": "non_agriculture_income",
+        "correlation": 0.9368153185314189
+      },
+      {
+        "feature": "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2021",
+        "correlation": -0.017664815821490286
+      },
+      {
+        "feature": "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2020",
+        "correlation": -0.016204692652836396
+      },
+      {
+        "feature": "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2022",
+        "correlation": -0.016039580906476242
+      },
+      {
+        "feature": "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2020",
+        "correlation": -0.01599423559831124
+      },
+      {
+        "feature": "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2022",
+        "correlation": -0.01581152494326815
+      },
+      {
+        "feature": "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2021",
+        "correlation": -0.014793497887913136
+      },
+      {
+        "feature": "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2021",
+        "correlation": -0.013080581391001898
+      },
+      {
+        "feature": "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2020",
+        "correlation": -0.010858346797336915
+      },
+      {
+        "feature": "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2020",
+        "correlation": -0.01069574017168437
+      }
+    ]
+  },
+  "multicollinearity": {
+    "high_correlation_pairs": 19,
+    "top_pairs": [
+      {
+        "feature1": "kharif_seasons_kharif_season_irrigated_area_in_2021",
+        "feature2": "rabi_seasons_season_irrigated_area_in_2022",
+        "correlation": 1.0,
+        "abs_correlation": 1.0
+      },
+      {
+        "feature1": "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2021",
+        "feature2": "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2022",
+        "correlation": 0.9818103363390953,
+        "abs_correlation": 0.9818103363390953
+      },
+      {
+        "feature1": "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2022",
+        "feature2": "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2021",
+        "correlation": 0.9759007443882743,
+        "abs_correlation": 0.9759007443882743
+      },
+      {
+        "feature1": "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2022",
+        "feature2": "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2021",
+        "correlation": 0.9752458215624129,
+        "abs_correlation": 0.9752458215624129
+      },
+      {
+        "feature1": "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2021",
+        "feature2": "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2022",
+        "correlation": 0.9716865848813272,
+        "abs_correlation": 0.9716865848813272
+      }
+    ]
+  },
+  "geographic_analysis": {
+    "state": {
+      "total_categories": 17,
+      "categories_with_10plus": 16,
+      "income_range": [
+        773044.5414847161,
+        1897529.891304348
+      ],
+      "top_5": "                count          mean     median           std\nstate                                                       \nPUNJAB            276  1.897530e+06  1547000.0  1.245804e+06\nMADHYA PRADESH  15959  1.730456e+06   800000.0  4.829074e+07\nHARYANA          1066  1.643418e+06  1304700.0  1.386792e+06\nKARNATAKA        7497  1.438019e+06  1250000.0  1.027116e+06\nCHANDIGARH         23  1.394420e+06  1075000.0  7.343994e+05"
+    },
+    "region": {
+      "total_categories": 5,
+      "categories_with_10plus": 5,
+      "income_range": [
+        939833.9661777911,
+        1692798.7264691829
+      ],
+      "top_5": "         count          mean     median           std\nregion                                               \nCENTRAL  16744  1.692799e+06   800000.0  4.714556e+07\nSOUTH    19798  1.295738e+06  1090000.0  1.434860e+06\nWEST      9411  1.227818e+06  1000000.0  2.782130e+06\nNORTH     4012  1.162395e+06   850000.0  2.275748e+06\nEAST      3341  9.398340e+05   790000.0  7.978956e+05"
+    },
+    "district": {
+      "total_categories": 405,
+      "categories_with_10plus": 327,
+      "income_range": [
+        567566.037735849,
+        14820669.852233676
+      ],
+      "top_5": "          count          mean     median           std\ndistrict                                              \nMORENA      582  1.482067e+07   612500.0  2.501001e+08\nMAHOBA       73  2.912123e+06  1000000.0  1.516831e+07\nAKOLA       217  2.877808e+06  1470000.0  1.503538e+07\nWASHIM       74  2.803703e+06   900000.0  1.051619e+07\nGUNA        157  2.724777e+06   800000.0  6.783212e+06"
+    },
+    "city": {
+      "total_categories": 2760,
+      "categories_with_10plus": 1070,
+      "income_range": [
+        464000.0,
+        51825054.62184874
+      ],
+      "top_5": "            count          mean     median           std\ncity                                                    \nMORENA        119  5.182505e+07   580500.0  5.498939e+08\nAMBAH          93  9.953517e+06   630000.0  6.593524e+07\nHAT PIPLIA     25  8.519200e+06  5000000.0  1.576750e+07\nRISOD          17  7.047941e+06   700000.0  2.154783e+07\nJHUNDPURA      45  6.925071e+06   612500.0  1.749118e+07"
+    }
+  },
+  "domain_specific": {
+    "agricultural_features": 43,
+    "weather_features": 5,
+    "top_agricultural_correlations": [
+      {
+        "feature": "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2022",
+        "correlation": -0.016039580906476242,
+        "abs_correlation": 0.016039580906476242
+      },
+      {
+        "feature": "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2022",
+        "correlation": -0.01581152494326815,
+        "abs_correlation": 0.01581152494326815
+      },
+      {
+        "feature": "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2022",
+        "correlation": -0.009332953838676765,
+        "abs_correlation": 0.009332953838676765
+      },
+      {
+        "feature": "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2022",
+        "correlation": -0.0069663103653964135,
+        "abs_correlation": 0.0069663103653964135
+      },
+      {
+        "feature": "rabi_seasons_season_irrigated_area_in_2022",
+        "correlation": 0.005373501217196459,
+        "abs_correlation": 0.005373501217196459
+      }
+    ],
+    "top_weather_correlations": [
+      {
+        "feature": "k021_seasonal_average_rainfall_mm",
+        "correlation": -0.005681957921687516,
+        "abs_correlation": 0.005681957921687516
+      },
+      {
+        "feature": "r020_seasonal_average_rainfall_mm",
+        "correlation": 0.005170973919596505,
+        "abs_correlation": 0.005170973919596505
+      },
+      {
+        "feature": "k022_seasonal_average_rainfall_mm",
+        "correlation": -0.0034806720300055737,
+        "abs_correlation": 0.0034806720300055737
+      },
+      {
+        "feature": "r021_seasonal_average_rainfall_mm",
+        "correlation": 0.0018797912614443703,
+        "abs_correlation": 0.0018797912614443703
+      },
+      {
+        "feature": "r022_seasonal_average_rainfall_mm",
+        "correlation": 0.0002774882552102671,
+        "abs_correlation": 0.0002774882552102671
+      }
+    ]
+  }
+}

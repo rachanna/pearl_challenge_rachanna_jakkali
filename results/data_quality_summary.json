@@ -1,0 +1,36 @@
+{
+  "total_features": 105,
+  "missing_value_categories": {
+    "no_missing": 92,
+    "low_missing_0_10": 9,
+    "medium_missing_10_30": 0,
+    "high_missing_30_50": 4,
+    "very_high_missing_50plus": 0
+  },
+  "problematic_features": {
+    "constant_features": [],
+    "near_constant_features": [],
+    "high_cardinality_features": [
+      "location"
+    ],
+    "very_high_missing_features": []
+  },
+  "agricultural_analysis": {
+    "agricultural_columns": 68,
+    "weather_columns": 10,
+    "year_wise_columns": {
+      "2022": 18,
+      "2021": 18,
+      "2020": 18
+    }
+  },
+  "data_types": {
+    "float64": 62,
+    "object": 38,
+    "int64": 5
+  },
+  "memory_usage_mb": 165.33065032958984,
+  "preprocessing_priorities": [
+    "Encode high cardinality categorical features"
+  ]
+}

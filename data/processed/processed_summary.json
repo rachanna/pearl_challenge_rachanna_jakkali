@@ -1,0 +1,17 @@
+{
+  "stage": "post_imputation",
+  "train_shape": [
+    53022,
+    105
+  ],
+  "test_shape": [
+    10000,
+    104
+  ],
+  "missing_values": {
+    "train": 0,
+    "test": 0
+  },
+  "total_columns_imputed": 12,
+  "timestamp": "2025-09-22T21:11:37.161435"
+}

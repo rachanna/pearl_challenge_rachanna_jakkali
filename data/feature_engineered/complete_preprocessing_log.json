@@ -1,0 +1,939 @@
+{
+  "start_time": "2025-09-22T21:10:47.733906",
+  "steps_completed": [
+    "column_management_and_splitting",
+    "missing_value_analysis",
+    "missing_value_imputation",
+    "categorical_encoding",
+    "feature_engineering",
+    "feature_scaling_selection_export"
+  ],
+  "data_shape_changes": [
+    {
+      "step": "initial_load",
+      "train_shape": [
+        53306,
+        105
+      ],
+      "test_shape": [
+        10000,
+        104
+      ],
+      "timestamp": "2025-09-22T21:10:48.768415"
+    },
+    {
+      "step": "column_management_splitting",
+      "train_shape": [
+        53306,
+        108
+      ],
+      "test_shape": [
+        10000,
+        107
+      ],
+      "timestamp": "2025-09-22T21:10:49.649183"
+    },
+    {
+      "step": "missing_value_imputation",
+      "train_shape": [
+        53022,
+        101
+      ],
+      "test_shape": [
+        10000,
+        100
+      ],
+      "missing_values_filled": 73766,
+      "timestamp": "2025-09-22T21:11:27.553549"
+    },
+    {
+      "step": "categorical_encoding",
+      "train_shape": [
+        53022,
+        105
+      ],
+      "test_shape": [
+        10000,
+        104
+      ],
+      "columns_added": 12,
+      "columns_removed": 8,
+      "timestamp": "2025-09-22T21:11:34.712890"
+    },
+    {
+      "step": "feature_engineering",
+      "train_shape": [
+        53022,
+        181
+      ],
+      "test_shape": [
+        10000,
+        180
+      ],
+      "features_added": 76,
+      "timestamp": "2025-09-22T21:11:37.454747"
+    }
+  ],
+  "columns_removed": [
+    "farmerid",
+    "city",
+    "zipcode",
+    "address_type",
+    "ownership",
+    "k022_nearest_mandi_name",
+    "village",
+    "district",
+    "farmerid",
+    "k022_ambient_temperature_min_max",
+    "r022_ambient_temperature_min_max",
+    "r021_ambient_temperature_min_max",
+    "k021_ambient_temperature_min_max",
+    "r020_ambient_temperature_min_max",
+    "location",
+    "k021_ambient_temperature_min_max_range",
+    "r021_ambient_temperature_min_max_max",
+    "k022_ambient_temperature_min_max_min",
+    "k022_proximity_to_nearest_mandi_km",
+    "no_of_active_loan_in_bureau",
+    "k022_ambient_temperature_min_max_range",
+    "night_light_index",
+    "state",
+    "region",
+    "kharif_seasons_type_of_water_bodies_in_hectares_2022",
+    "rabi_seasons_type_of_water_bodies_in_hectares_2022",
+    "rabi_seasons_type_of_water_bodies_in_hectares_2021",
+    "kharif_seasons_type_of_water_bodies_in_hectares_2021",
+    "kharif_seasons_type_of_water_bodies_in_hectares_2020",
+    "rabi_seasons_type_of_water_bodies_in_hectares_2020",
+    "rabi_seasons_cropping_density_in_2022",
+    "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2022",
+    "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2020",
+    "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2020",
+    "r021_ambient_temperature_min_max_min",
+    "r020_ambient_temperature_min_max_max",
+    "kharif_seasons_agro_ecological_sub_zone_in_2020",
+    "rabi_seasons_type_of_soil_in_2022",
+    "rabi_seasons_type_of_water_bodies_in_hectares_2020_target_encoded",
+    "rabi_seasons_type_of_water_bodies_in_hectares_2021_target_encoded",
+    "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2021",
+    "kharif_rabi_ratio_seasons_type_of_water_bodies_in_hectares_2020_target_encoded",
+    "r021_ambient_temperature_min_max_range",
+    "r021_ambient_temperature_weather_stability",
+    "r020_ambient_temperature_weather_stability",
+    "r020_ambient_temperature_min_max_min",
+    "kharif_seasons_type_of_soil_in_2022",
+    "r020_ambient_temperature_min_max_range",
+    "kharif_seasons_kharif_season_irrigated_area_in_2021",
+    "rabi_seasons_type_of_water_bodies_in_hectares_2022_target_encoded",
+    "r022_ambient_temperature_weather_stability",
+    "rabi_seasons_type_of_soil_in_2020",
+    "kharif_seasons_agro_ecological_sub_zone_in_2022",
+    "village_score_based_on_socio_economic_parameters_non_normalised",
+    "rabi_seasons_type_of_soil_in_2021",
+    "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2021",
+    "rabi_seasons_agro_ecological_sub_zone_in_2022",
+    "village_score_based_on_socio_economic_parameters_0_to_100",
+    "rabi_seasons_agro_ecological_sub_zone_in_2020",
+    "location_latitude",
+    "kharif_seasons_type_of_water_bodies_in_hectares_2022_target_encoded",
+    "rabi_seasons_agro_ecological_sub_zone_in_2021",
+    "k021_ambient_temperature_min_max_max",
+    "k021_ambient_temperature_min_max_min",
+    "village_category_based_on_socio_economic_parameters_good_average_poor",
+    "kharif_seasons_cropping_density_in_2020",
+    "kharif_seasons_type_of_soil_in_yoy_growth_1",
+    "rabi_seasons_agro_ecological_sub_zone_in_yoy_growth_1",
+    "k022_village_category_based_on_socio_economic_parameters_good_average_poor",
+    "rabi_seasons_type_of_water_bodies_in_hectares__target_encoded_yoy_growth_1",
+    "rabi_seasons_type_of_soil_in_yoy_growth_1",
+    "kharif_rabi_ratio_seasons_agro_ecological_sub_zone_in_2022",
+    "kharif_rabi_ratio_seasons_type_of_water_bodies_in_hectares_2022_target_encoded",
+    "kharif_rabi_ratio_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2021",
+    "r021_ambient_temperature_weather_range",
+    "kharif_rabi_ratio_seasons_agricultural_performance_in_2022",
+    "r021_seasonal_average_rainfall_mm",
+    "rabi_seasons_agricultural_performance_in_2020",
+    "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2022",
+    "kharif_rabi_ratio_seasons_type_of_soil_in_2020",
+    "rabi_seasons_type_of_soil_in_yoy_growth_2",
+    "rabi_seasons_cropping_density_in_yoy_growth_2",
+    "kharif_rabi_ratio_seasons_agro_ecological_sub_zone_in_2021",
+    "region_NORTH",
+    "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_yoy_growth_1",
+    "kharif_seasons_type_of_water_bodies_in_hectares__target_encoded_yoy_growth_2",
+    "k021_ambient_temperature_weather_range",
+    "kharif_seasons_agricultural_performance_in_2022",
+    "rabi_seasons_kharif_season_irrigated_area_in_yoy_growth_1",
+    "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2022",
+    "kharif_seasons_type_of_soil_in_yoy_growth_2",
+    "kharif_rabi_ratio_seasons_type_of_water_bodies_in_hectares_2021_target_encoded",
+    "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_yoy_growth_2",
+    "perc_households_with_pucca_house_that_has_more_than_3_rooms",
+    "r020_ambient_temperature_weather_range",
+    "kharif_rabi_ratio_seasons_cropping_density_in_2020",
+    "kharif_rabi_ratio_seasons_type_of_soil_in_2022",
+    "rabi_seasons_agro_ecological_sub_zone_in_yoy_growth_2",
+    "kharif_rabi_ratio_seasons_agricultural_score_in_2021",
+    "kharif_seasons_type_of_water_bodies_in_hectares__target_encoded_yoy_growth_1",
+    "r022_ambient_temperature_weather_range",
+    "kharif_rabi_ratio_seasons_agricultural_score_in_2020",
+    "kharif_seasons_cropping_density_in_yoy_growth_1",
+    "kharif_rabi_ratio_seasons_type_of_soil_in_2021",
+    "rabi_seasons_type_of_water_bodies_in_hectares__target_encoded_yoy_growth_2",
+    "r022_village_category_based_on_agri_parameters_good_average_poor",
+    "kharif_rabi_ratio_seasons_cropping_density_in_2021",
+    "marital_status",
+    "kharif_seasons_agro_ecological_sub_zone_in_yoy_growth_2",
+    "k022_village_category_based_on_agri_parameters_good_average_poor"
+  ],
+  "columns_added": [
+    "k022_ambient_temperature_min_max_min",
+    "k022_ambient_temperature_min_max_max",
+    "k022_ambient_temperature_min_max_range",
+    "r022_ambient_temperature_min_max_min",
+    "r022_ambient_temperature_min_max_max",
+    "r022_ambient_temperature_min_max_range",
+    "r021_ambient_temperature_min_max_min",
+    "r021_ambient_temperature_min_max_max",
+    "r021_ambient_temperature_min_max_range",
+    "k021_ambient_temperature_min_max_min",
+    "k021_ambient_temperature_min_max_max",
+    "k021_ambient_temperature_min_max_range",
+    "r020_ambient_temperature_min_max_min",
+    "r020_ambient_temperature_min_max_max",
+    "r020_ambient_temperature_min_max_range",
+    "location_latitude",
+    "location_longitude",
+    "state_target_encoded",
+    "region_CENTRAL",
+    "region_EAST",
+    "region_NORTH",
+    "region_SOUTH",
+    "region_WEST",
+    "kharif_seasons_type_of_water_bodies_in_hectares_2022_target_encoded",
+    "rabi_seasons_type_of_water_bodies_in_hectares_2022_target_encoded",
+    "rabi_seasons_type_of_water_bodies_in_hectares_2021_target_encoded",
+    "kharif_seasons_type_of_water_bodies_in_hectares_2021_target_encoded",
+    "kharif_seasons_type_of_water_bodies_in_hectares_2020_target_encoded",
+    "rabi_seasons_type_of_water_bodies_in_hectares_2020_target_encoded",
+    "rabi_seasons_agricultural_score_in_yoy_growth_1",
+    "kharif_seasons_type_of_soil_in_yoy_growth_1",
+    "rabi_seasons_agro_ecological_sub_zone_in_yoy_growth_1",
+    "r0_ambient_temperature_min_max_min_yoy_growth_1",
+    "rabi_seasons_type_of_water_bodies_in_hectares__target_encoded_yoy_growth_1",
+    "rabi_seasons_type_of_soil_in_yoy_growth_1",
+    "kharif_seasons_agricultural_score_in_yoy_growth_1",
+    "k0_ambient_temperature_min_max_max_yoy_growth_1",
+    "kharif_seasons_agricultural_performance_in_yoy_growth_1",
+    "rabi_seasons_agricultural_score_in_yoy_growth_2",
+    "rabi_seasons_type_of_soil_in_yoy_growth_2",
+    "r0_ambient_temperature_min_max_range_yoy_growth_1",
+    "r0_ambient_temperature_min_max_min_yoy_growth_2",
+    "rabi_seasons_cropping_density_in_yoy_growth_2",
+    "k0_seasonal_average_rainfall_mm_yoy_growth_1",
+    "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_yoy_growth_1",
+    "kharif_seasons_type_of_water_bodies_in_hectares__target_encoded_yoy_growth_2",
+    "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_yoy_growth_1",
+    "kharif_seasons_agro_ecological_sub_zone_in_yoy_growth_2",
+    "rabi_seasons_kharif_season_irrigated_area_in_yoy_growth_1",
+    "kharif_seasons_type_of_soil_in_yoy_growth_2",
+    "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_yoy_growth_1",
+    "r0_ambient_temperature_min_max_range_yoy_growth_2",
+    "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_yoy_growth_2",
+    "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_yoy_growth_2",
+    "kharif_seasons_cropping_density_in_yoy_growth_2",
+    "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_yoy_growth_2",
+    "rabi_seasons_cropping_density_in_yoy_growth_1",
+    "rabi_seasons_agro_ecological_sub_zone_in_yoy_growth_2",
+    "r0_ambient_temperature_min_max_max_yoy_growth_1",
+    "r0_seasonal_average_rainfall_mm_yoy_growth_2",
+    "kharif_seasons_type_of_water_bodies_in_hectares__target_encoded_yoy_growth_1",
+    "kharif_seasons_agricultural_score_in_yoy_growth_2",
+    "r0_seasonal_average_rainfall_mm_yoy_growth_1",
+    "kharif_seasons_cropping_density_in_yoy_growth_1",
+    "rabi_seasons_type_of_water_bodies_in_hectares__target_encoded_yoy_growth_2",
+    "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_yoy_growth_1",
+    "kharif_seasons_agro_ecological_sub_zone_in_yoy_growth_1",
+    "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_yoy_growth_2",
+    "rabi_seasons_agricultural_performance_in_yoy_growth_1",
+    "kharif_seasons_agricultural_performance_in_yoy_growth_2",
+    "kharif_seasons_kharif_season_irrigated_area_in_yoy_growth_1",
+    "rabi_seasons_agricultural_performance_in_yoy_growth_2",
+    "kharif_rabi_ratio_seasons_cropping_density_in_2022",
+    "kharif_rabi_ratio_seasons_agricultural_performance_in_2021",
+    "kharif_rabi_ratio_seasons_agro_ecological_sub_zone_in_2022",
+    "kharif_rabi_ratio_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2022",
+    "kharif_rabi_ratio_seasons_type_of_water_bodies_in_hectares_2022_target_encoded",
+    "kharif_rabi_ratio_seasons_type_of_water_bodies_in_hectares_2020_target_encoded",
+    "kharif_rabi_ratio_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2021",
+    "kharif_rabi_ratio_seasons_agricultural_performance_in_2022",
+    "kharif_rabi_ratio_seasons_agricultural_performance_in_2020",
+    "kharif_rabi_ratio_seasons_type_of_soil_in_2020",
+    "kharif_rabi_ratio_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2020",
+    "kharif_rabi_ratio_seasons_agro_ecological_sub_zone_in_2020",
+    "kharif_rabi_ratio_seasons_type_of_water_bodies_in_hectares_2021_target_encoded",
+    "kharif_rabi_ratio_seasons_seasonal_average_groundwater_thickness_cm_in_2021",
+    "kharif_rabi_ratio_seasons_cropping_density_in_2020",
+    "kharif_rabi_ratio_seasons_type_of_soil_in_2022",
+    "kharif_rabi_ratio_seasons_agricultural_score_in_2021",
+    "kharif_rabi_ratio_seasons_agricultural_score_in_2020",
+    "kharif_rabi_ratio_seasons_agricultural_score_in_2022",
+    "kharif_rabi_ratio_seasons_type_of_soil_in_2021",
+    "kharif_rabi_ratio_seasons_seasonal_average_groundwater_thickness_cm_in_2020",
+    "kharif_rabi_ratio_seasons_seasonal_average_groundwater_thickness_cm_in_2022",
+    "kharif_rabi_ratio_seasons_cropping_density_in_2021",
+    "kharif_rabi_ratio_seasons_agro_ecological_sub_zone_in_2021",
+    "r022_ambient_temperature_weather_range",
+    "k021_ambient_temperature_weather_range",
+    "r022_ambient_temperature_weather_stability",
+    "r021_ambient_temperature_weather_range",
+    "r021_ambient_temperature_weather_stability",
+    "k021_ambient_temperature_weather_stability",
+    "r020_ambient_temperature_weather_range",
+    "r020_ambient_temperature_weather_stability",
+    "location_cluster"
+  ],
+  "outliers_removed": {},
+  "missing_value_handling": {
+    "analysis_completed": true,
+    "columns_removed_for_missing": [
+      "k021_ambient_temperature_min_max_range",
+      "r021_ambient_temperature_min_max_max",
+      "k022_ambient_temperature_min_max_min",
+      "k022_proximity_to_nearest_mandi_km",
+      "no_of_active_loan_in_bureau",
+      "k022_ambient_temperature_min_max_range",
+      "night_light_index"
+    ],
+    "imputation_strategies_defined": {
+      "demographic": {
+        "numeric": "median",
+        "categorical": "mode_grouped",
+        "description": "Demographics: Median for numeric, mode within geographic groups for categorical"
+      },
+      "agricultural": {
+        "numeric": "median_grouped",
+        "categorical": "mode",
+        "description": "Agricultural: Regional median, mode for categorical"
+      },
+      "weather": {
+        "numeric": "median_grouped",
+        "categorical": "mode",
+        "description": "Weather: Regional averages by state"
+      },
+      "financial": {
+        "numeric": "knn",
+        "categorical": "mode",
+        "description": "Financial: KNN imputation, mode for categorical"
+      },
+      "geographic": {
+        "numeric": "median",
+        "categorical": "mode",
+        "description": "Geographic: Median for numeric, mode for categorical"
+      },
+      "infrastructure": {
+        "numeric": "median_grouped",
+        "categorical": "mode",
+        "description": "Infrastructure: District-level median imputation"
+      },
+      "other": {
+        "numeric": "median",
+        "categorical": "mode",
+        "description": "Other: Simple median/mode imputation"
+      }
+    },
+    "feature_categorization": {
+      "demographic": [
+        "sex",
+        "marital_status",
+        "k022_village_category_based_on_agri_parameters_good_average_poor",
+        "ko22_village_score_based_on_socio_economic_parameters_0_to_100",
+        "k022_village_category_based_on_socio_economic_parameters_good_average_poor",
+        "k022_seasonal_average_rainfall_mm",
+        "r022_village_category_based_on_agri_parameters_good_average_poor",
+        "r022_seasonal_average_rainfall_mm",
+        "k021_seasonal_average_rainfall_mm",
+        "r021_seasonal_average_rainfall_mm",
+        "r020_seasonal_average_rainfall_mm",
+        "perc_households_with_pucca_house_that_has_more_than_3_rooms",
+        "households_with_improved_sanitation_facility",
+        "perc_households_do_not_have_kcc_with_the_credit_limit_of_50k",
+        "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2022",
+        "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2022",
+        "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2022",
+        "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2022",
+        "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2021",
+        "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2021",
+        "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2021",
+        "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2021",
+        "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_2020",
+        "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2020",
+        "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_2020",
+        "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2020",
+        "village_score_based_on_socio_economic_parameters_non_normalised",
+        "village_score_based_on_socio_economic_parameters_0_to_100",
+        "village_category_based_on_socio_economic_parameters_good_average_poor"
+      ],
+      "agricultural": [
+        "total_land_for_agriculture",
+        "k022_total_geographical_area_in_hectares",
+        "k022_net_agri_area_in_ha",
+        "k022_net_agri_area_of_total_geog_area",
+        "kharif_seasons_irrigated_area_in_2022",
+        "kharif_seasons_cropping_density_in_2022",
+        "kharif_seasons_agricultural_performance_in_2022",
+        "kharif_seasons_agricultural_score_in_2022",
+        "kharif_seasons_type_of_soil_in_2022",
+        "kharif_seasons_type_of_water_bodies_in_hectares_2022",
+        "kharif_seasons_agro_ecological_sub_zone_in_2022",
+        "rabi_seasons_season_irrigated_area_in_2022",
+        "rabi_seasons_cropping_density_in_2022",
+        "rabi_seasons_agricultural_performance_in_2022",
+        "rabi_seasons_agricultural_score_in_2022",
+        "rabi_seasons_type_of_soil_in_2022",
+        "rabi_seasons_type_of_water_bodies_in_hectares_2022",
+        "rabi_seasons_agro_ecological_sub_zone_in_2022",
+        "rabi_seasons_kharif_season_irrigated_area_in_2021",
+        "rabi_seasons_cropping_density_in_2021",
+        "rabi_seasons_agricultural_performance_in_2021",
+        "rabi_seasons_agricultural_score_in_2021",
+        "rabi_seasons_type_of_soil_in_2021",
+        "rabi_seasons_type_of_water_bodies_in_hectares_2021",
+        "rabi_seasons_agro_ecological_sub_zone_in_2021",
+        "kharif_seasons_kharif_season_irrigated_area_in_2021",
+        "kharif_seasons_cropping_density_in_2021",
+        "kharif_seasons_agricultural_performance_in_2021",
+        "kharif_seasons_agricultural_score_in_2021",
+        "kharif_seasons_type_of_soil_in_2021",
+        "kharif_seasons_type_of_water_bodies_in_hectares_2021",
+        "kharif_seasons_agro_ecological_sub_zone_in_2021",
+        "kharif_seasons_kharif_season_irrigated_area_in_2020",
+        "kharif_seasons_cropping_density_in_2020",
+        "kharif_seasons_agricultural_performance_in_2020",
+        "kharif_seasons_agricultural_score_in_2020",
+        "kharif_seasons_type_of_soil_in_2020",
+        "kharif_seasons_type_of_water_bodies_in_hectares_2020",
+        "kharif_seasons_agro_ecological_sub_zone_in_2020",
+        "rabi_seasons_kharif_season_irrigated_area_in_2020",
+        "rabi_seasons_cropping_density_in_2020",
+        "rabi_seasons_agricultural_performance_in_2020",
+        "rabi_seasons_agricultural_score_in_2020",
+        "rabi_seasons_type_of_soil_in_2020",
+        "rabi_seasons_type_of_water_bodies_in_hectares_2020",
+        "rabi_seasons_agro_ecological_sub_zone_in_2020",
+        "land_holding_index_source_total_agri_area_no_of_people"
+      ],
+      "weather": [
+        "k022_ambient_temperature_min_max_max",
+        "r022_ambient_temperature_min_max_min",
+        "r022_ambient_temperature_min_max_max",
+        "r022_ambient_temperature_min_max_range",
+        "r021_ambient_temperature_min_max_min",
+        "r021_ambient_temperature_min_max_range",
+        "k021_ambient_temperature_min_max_min",
+        "k021_ambient_temperature_min_max_max",
+        "r020_ambient_temperature_min_max_min",
+        "r020_ambient_temperature_min_max_max",
+        "r020_ambient_temperature_min_max_range"
+      ],
+      "financial": [
+        "avg_disbursement_amount_bureau",
+        "non_agriculture_income"
+      ],
+      "geographic": [
+        "state",
+        "region",
+        "perc_of_pop_living_in_hh_electricity",
+        "location_latitude",
+        "location_longitude"
+      ],
+      "infrastructure": [
+        "road_density_km_sqkm"
+      ],
+      "other": [
+        "k022_proximity_to_nearest_railway_km",
+        "perc_of_house_with_6plus_room",
+        "women_15_19_mothers_or_pregnant_at_time_of_survey",
+        "mat_roof_metal_gi_asbestos_sheets",
+        "perc_of_wall_material_with_burnt_brick"
+      ]
+    },
+    "imputation_applied": true,
+    "imputation_log": {
+      "demographic": {
+        "perc_households_with_pucca_house_that_has_more_than_3_rooms": {
+          "method": "grouped_median",
+          "group_column": "state",
+          "overall_fallback": 4.31,
+          "group_fills": {
+            "ANDHRA PRADESH": 2.51,
+            "ASSAM": 4.81,
+            "BIHAR": 6.12,
+            "CHANDIGARH": 22.51,
+            "CHATTISGARH": 2.45,
+            "GUJARAT": 1.95,
+            "HARYANA": 11.49,
+            "JHARKHAND": 4.0,
+            "KARNATAKA": 4.67,
+            "MADHYA PRADESH": 3.48,
+            "MAHARASHTRA": 4.6,
+            "ODISHA": 2.58,
+            "PUNJAB": 11.59,
+            "RAJASTHAN": NaN,
+            "TELANGANA": 5.78,
+            "UTTAR PRADESH": 9.4,
+            "WEST BENGAL": 3.51
+          }
+        },
+        "households_with_improved_sanitation_facility": {
+          "method": "grouped_median",
+          "group_column": "state",
+          "overall_fallback": 71.3,
+          "group_fills": {
+            "ANDHRA PRADESH": 78.54,
+            "ASSAM": 74.41,
+            "BIHAR": 48.7,
+            "CHANDIGARH": 84.18,
+            "CHATTISGARH": 79.46,
+            "GUJARAT": 72.1,
+            "HARYANA": 86.2,
+            "JHARKHAND": 56.2,
+            "KARNATAKA": 83.3,
+            "MADHYA PRADESH": 62.62,
+            "MAHARASHTRA": 69.5,
+            "ODISHA": 57.3,
+            "PUNJAB": 86.16,
+            "RAJASTHAN": NaN,
+            "TELANGANA": 76.2,
+            "UTTAR PRADESH": 69.03,
+            "WEST BENGAL": 64.2
+          }
+        },
+        "perc_households_do_not_have_kcc_with_the_credit_limit_of_50k": {
+          "method": "grouped_median",
+          "group_column": "state",
+          "overall_fallback": 1.75,
+          "group_fills": {
+            "ANDHRA PRADESH": 0.68,
+            "ASSAM": 0.59,
+            "BIHAR": 1.95,
+            "CHANDIGARH": 2.79,
+            "CHATTISGARH": 0.8,
+            "GUJARAT": 0.95,
+            "HARYANA": 6.15,
+            "JHARKHAND": 1.39,
+            "KARNATAKA": 1.05,
+            "MADHYA PRADESH": 4.93,
+            "MAHARASHTRA": 1.37,
+            "ODISHA": 0.66,
+            "PUNJAB": 3.83,
+            "RAJASTHAN": NaN,
+            "TELANGANA": 0.68,
+            "UTTAR PRADESH": 5.14,
+            "WEST BENGAL": 0.74
+          }
+        }
+      },
+      "agricultural": {
+        "total_land_for_agriculture": {
+          "method": "grouped_median",
+          "group_column": "state",
+          "overall_fallback": 10.0,
+          "group_fills": {
+            "ANDHRA PRADESH": 10.0,
+            "ASSAM": 5.0,
+            "BIHAR": 4.0,
+            "CHANDIGARH": 10.0,
+            "CHATTISGARH": 7.0,
+            "GUJARAT": 7.0,
+            "HARYANA": 12.0,
+            "JHARKHAND": 5.0,
+            "KARNATAKA": 6.0,
+            "MADHYA PRADESH": 10.0,
+            "MAHARASHTRA": 10.0,
+            "ODISHA": 8.0,
+            "PUNJAB": 15.0,
+            "RAJASTHAN": 4.9,
+            "TELANGANA": 9.5,
+            "UTTAR PRADESH": 6.0,
+            "WEST BENGAL": 3.0
+          }
+        }
+      },
+      "weather": {},
+      "financial": {
+        "knn_numeric": {
+          "method": "knn",
+          "n_neighbors": 5,
+          "columns_processed": [
+            "avg_disbursement_amount_bureau"
+          ]
+        }
+      },
+      "geographic": {
+        "perc_of_pop_living_in_hh_electricity": {
+          "method": "median",
+          "fill_value": 98.95
+        },
+        "location_latitude": {
+          "method": "median",
+          "fill_value": 20.42263305
+        },
+        "location_longitude": {
+          "method": "median",
+          "fill_value": 78.13630795
+        }
+      },
+      "infrastructure": {},
+      "other": {
+        "perc_of_house_with_6plus_room": {
+          "method": "median",
+          "fill_value": 1.17
+        },
+        "women_15_19_mothers_or_pregnant_at_time_of_survey": {
+          "method": "median",
+          "fill_value": 5.8
+        },
+        "mat_roof_metal_gi_asbestos_sheets": {
+          "method": "median",
+          "fill_value": 8.29
+        },
+        "perc_of_wall_material_with_burnt_brick": {
+          "method": "median",
+          "fill_value": 39.93
+        }
+      }
+    },
+    "total_columns_imputed": 12,
+    "missing_before": 73766,
+    "missing_after": 0,
+    "imputation_success_rate": 100.0,
+    "columns_still_missing": {
+      "train": {},
+      "test": {}
+    }
+  },
+  "encoding_applied": {
+    "total_categorical_columns": 26,
+    "encoding_strategies": {
+      "state": {
+        "strategy": "target",
+        "train_unique": 17,
+        "test_unique": 16,
+        "unseen_categories": 0
+      },
+      "region": {
+        "strategy": "onehot",
+        "train_unique": 5,
+        "test_unique": 5,
+        "unseen_categories": 0
+      },
+      "sex": {
+        "strategy": "label",
+        "train_unique": 2,
+        "test_unique": 3,
+        "unseen_categories": 1
+      },
+      "marital_status": {
+        "strategy": "label",
+        "train_unique": 2,
+        "test_unique": 2,
+        "unseen_categories": 0
+      },
+      "k022_village_category_based_on_agri_parameters_good_average_poor": {
+        "strategy": "ordinal",
+        "train_unique": 2,
+        "test_unique": 2,
+        "unseen_categories": 0
+      },
+      "k022_village_category_based_on_socio_economic_parameters_good_average_poor": {
+        "strategy": "ordinal",
+        "train_unique": 3,
+        "test_unique": 3,
+        "unseen_categories": 0
+      },
+      "r022_village_category_based_on_agri_parameters_good_average_poor": {
+        "strategy": "ordinal",
+        "train_unique": 2,
+        "test_unique": 2,
+        "unseen_categories": 0
+      },
+      "kharif_seasons_type_of_soil_in_2022": {
+        "strategy": "ordinal",
+        "train_unique": 8,
+        "test_unique": 8,
+        "unseen_categories": 0
+      },
+      "kharif_seasons_type_of_water_bodies_in_hectares_2022": {
+        "strategy": "target",
+        "train_unique": 22,
+        "test_unique": 20,
+        "unseen_categories": 0
+      },
+      "kharif_seasons_agro_ecological_sub_zone_in_2022": {
+        "strategy": "ordinal",
+        "train_unique": 12,
+        "test_unique": 12,
+        "unseen_categories": 0
+      },
+      "rabi_seasons_type_of_soil_in_2022": {
+        "strategy": "ordinal",
+        "train_unique": 8,
+        "test_unique": 8,
+        "unseen_categories": 0
+      },
+      "rabi_seasons_type_of_water_bodies_in_hectares_2022": {
+        "strategy": "target",
+        "train_unique": 22,
+        "test_unique": 20,
+        "unseen_categories": 0
+      },
+      "rabi_seasons_agro_ecological_sub_zone_in_2022": {
+        "strategy": "ordinal",
+        "train_unique": 12,
+        "test_unique": 12,
+        "unseen_categories": 0
+      },
+      "rabi_seasons_type_of_soil_in_2021": {
+        "strategy": "ordinal",
+        "train_unique": 8,
+        "test_unique": 8,
+        "unseen_categories": 0
+      },
+      "rabi_seasons_type_of_water_bodies_in_hectares_2021": {
+        "strategy": "target",
+        "train_unique": 22,
+        "test_unique": 20,
+        "unseen_categories": 0
+      },
+      "rabi_seasons_agro_ecological_sub_zone_in_2021": {
+        "strategy": "ordinal",
+        "train_unique": 12,
+        "test_unique": 12,
+        "unseen_categories": 0
+      },
+      "kharif_seasons_type_of_soil_in_2021": {
+        "strategy": "ordinal",
+        "train_unique": 8,
+        "test_unique": 8,
+        "unseen_categories": 0
+      },
+      "kharif_seasons_type_of_water_bodies_in_hectares_2021": {
+        "strategy": "target",
+        "train_unique": 22,
+        "test_unique": 20,
+        "unseen_categories": 0
+      },
+      "kharif_seasons_agro_ecological_sub_zone_in_2021": {
+        "strategy": "ordinal",
+        "train_unique": 12,
+        "test_unique": 12,
+        "unseen_categories": 0
+      },
+      "kharif_seasons_type_of_soil_in_2020": {
+        "strategy": "ordinal",
+        "train_unique": 8,
+        "test_unique": 8,
+        "unseen_categories": 0
+      },
+      "kharif_seasons_type_of_water_bodies_in_hectares_2020": {
+        "strategy": "target",
+        "train_unique": 22,
+        "test_unique": 20,
+        "unseen_categories": 0
+      },
+      "kharif_seasons_agro_ecological_sub_zone_in_2020": {
+        "strategy": "ordinal",
+        "train_unique": 12,
+        "test_unique": 12,
+        "unseen_categories": 0
+      },
+      "rabi_seasons_type_of_soil_in_2020": {
+        "strategy": "ordinal",
+        "train_unique": 8,
+        "test_unique": 8,
+        "unseen_categories": 0
+      },
+      "rabi_seasons_type_of_water_bodies_in_hectares_2020": {
+        "strategy": "target",
+        "train_unique": 22,
+        "test_unique": 20,
+        "unseen_categories": 0
+      },
+      "rabi_seasons_agro_ecological_sub_zone_in_2020": {
+        "strategy": "ordinal",
+        "train_unique": 12,
+        "test_unique": 12,
+        "unseen_categories": 0
+      },
+      "village_category_based_on_socio_economic_parameters_good_average_poor": {
+        "strategy": "ordinal",
+        "train_unique": 3,
+        "test_unique": 3,
+        "unseen_categories": 0
+      }
+    },
+    "columns_added": [
+      "state_target_encoded",
+      "region_CENTRAL",
+      "region_EAST",
+      "region_NORTH",
+      "region_SOUTH",
+      "region_WEST",
+      "kharif_seasons_type_of_water_bodies_in_hectares_2022_target_encoded",
+      "rabi_seasons_type_of_water_bodies_in_hectares_2022_target_encoded",
+      "rabi_seasons_type_of_water_bodies_in_hectares_2021_target_encoded",
+      "kharif_seasons_type_of_water_bodies_in_hectares_2021_target_encoded",
+      "kharif_seasons_type_of_water_bodies_in_hectares_2020_target_encoded",
+      "rabi_seasons_type_of_water_bodies_in_hectares_2020_target_encoded"
+    ],
+    "columns_removed": [
+      "state",
+      "region",
+      "kharif_seasons_type_of_water_bodies_in_hectares_2022",
+      "rabi_seasons_type_of_water_bodies_in_hectares_2022",
+      "rabi_seasons_type_of_water_bodies_in_hectares_2021",
+      "kharif_seasons_type_of_water_bodies_in_hectares_2021",
+      "kharif_seasons_type_of_water_bodies_in_hectares_2020",
+      "rabi_seasons_type_of_water_bodies_in_hectares_2020"
+    ],
+    "encoding_objects_saved": true,
+    "remaining_categorical": []
+  },
+  "feature_engineering": {
+    "total_features_created": 76,
+    "feature_categories": {
+      "year_over_year_growth": 43,
+      "seasonal_ratios": 24,
+      "efficiency_indices": 0,
+      "weather_stability": 8,
+      "accessibility": 0,
+      "geographic": 1,
+      "financial_ratios": 24
+    },
+    "engineered_features": [
+      "rabi_seasons_agricultural_score_in_yoy_growth_1",
+      "kharif_seasons_type_of_soil_in_yoy_growth_1",
+      "rabi_seasons_agro_ecological_sub_zone_in_yoy_growth_1",
+      "r0_ambient_temperature_min_max_min_yoy_growth_1",
+      "rabi_seasons_type_of_water_bodies_in_hectares__target_encoded_yoy_growth_1",
+      "rabi_seasons_type_of_soil_in_yoy_growth_1",
+      "kharif_seasons_agricultural_score_in_yoy_growth_1",
+      "k0_ambient_temperature_min_max_max_yoy_growth_1",
+      "kharif_seasons_agricultural_performance_in_yoy_growth_1",
+      "rabi_seasons_agricultural_score_in_yoy_growth_2",
+      "rabi_seasons_type_of_soil_in_yoy_growth_2",
+      "r0_ambient_temperature_min_max_range_yoy_growth_1",
+      "r0_ambient_temperature_min_max_min_yoy_growth_2",
+      "rabi_seasons_cropping_density_in_yoy_growth_2",
+      "k0_seasonal_average_rainfall_mm_yoy_growth_1",
+      "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_yoy_growth_1",
+      "kharif_seasons_type_of_water_bodies_in_hectares__target_encoded_yoy_growth_2",
+      "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_yoy_growth_1",
+      "kharif_seasons_agro_ecological_sub_zone_in_yoy_growth_2",
+      "rabi_seasons_kharif_season_irrigated_area_in_yoy_growth_1",
+      "kharif_seasons_type_of_soil_in_yoy_growth_2",
+      "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_yoy_growth_1",
+      "r0_ambient_temperature_min_max_range_yoy_growth_2",
+      "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_yoy_growth_2",
+      "rabi_seasons_seasonal_average_groundwater_thickness_cm_in_yoy_growth_2",
+      "kharif_seasons_cropping_density_in_yoy_growth_2",
+      "kharif_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_yoy_growth_2",
+      "rabi_seasons_cropping_density_in_yoy_growth_1",
+      "rabi_seasons_agro_ecological_sub_zone_in_yoy_growth_2",
+      "r0_ambient_temperature_min_max_max_yoy_growth_1",
+      "r0_seasonal_average_rainfall_mm_yoy_growth_2",
+      "kharif_seasons_type_of_water_bodies_in_hectares__target_encoded_yoy_growth_1",
+      "kharif_seasons_agricultural_score_in_yoy_growth_2",
+      "r0_seasonal_average_rainfall_mm_yoy_growth_1",
+      "kharif_seasons_cropping_density_in_yoy_growth_1",
+      "rabi_seasons_type_of_water_bodies_in_hectares__target_encoded_yoy_growth_2",
+      "rabi_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_yoy_growth_1",
+      "kharif_seasons_agro_ecological_sub_zone_in_yoy_growth_1",
+      "kharif_seasons_seasonal_average_groundwater_thickness_cm_in_yoy_growth_2",
+      "rabi_seasons_agricultural_performance_in_yoy_growth_1",
+      "kharif_seasons_agricultural_performance_in_yoy_growth_2",
+      "kharif_seasons_kharif_season_irrigated_area_in_yoy_growth_1",
+      "rabi_seasons_agricultural_performance_in_yoy_growth_2",
+      "kharif_rabi_ratio_seasons_cropping_density_in_2022",
+      "kharif_rabi_ratio_seasons_agricultural_performance_in_2021",
+      "kharif_rabi_ratio_seasons_agro_ecological_sub_zone_in_2022",
+      "kharif_rabi_ratio_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2022",
+      "kharif_rabi_ratio_seasons_type_of_water_bodies_in_hectares_2022_target_encoded",
+      "kharif_rabi_ratio_seasons_type_of_water_bodies_in_hectares_2020_target_encoded",
+      "kharif_rabi_ratio_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2021",
+      "kharif_rabi_ratio_seasons_agricultural_performance_in_2022",
+      "kharif_rabi_ratio_seasons_agricultural_performance_in_2020",
+      "kharif_rabi_ratio_seasons_type_of_soil_in_2020",
+      "kharif_rabi_ratio_seasons_seasonal_average_groundwater_replenishment_rate_cm_in_2020",
+      "kharif_rabi_ratio_seasons_agro_ecological_sub_zone_in_2020",
+      "kharif_rabi_ratio_seasons_type_of_water_bodies_in_hectares_2021_target_encoded",
+      "kharif_rabi_ratio_seasons_seasonal_average_groundwater_thickness_cm_in_2021",
+      "kharif_rabi_ratio_seasons_cropping_density_in_2020",
+      "kharif_rabi_ratio_seasons_type_of_soil_in_2022",
+      "kharif_rabi_ratio_seasons_agricultural_score_in_2021",
+      "kharif_rabi_ratio_seasons_agricultural_score_in_2020",
+      "kharif_rabi_ratio_seasons_agricultural_score_in_2022",
+      "kharif_rabi_ratio_seasons_type_of_soil_in_2021",
+      "kharif_rabi_ratio_seasons_seasonal_average_groundwater_thickness_cm_in_2020",
+      "kharif_rabi_ratio_seasons_seasonal_average_groundwater_thickness_cm_in_2022",
+      "kharif_rabi_ratio_seasons_cropping_density_in_2021",
+      "kharif_rabi_ratio_seasons_agro_ecological_sub_zone_in_2021",
+      "r022_ambient_temperature_weather_range",
+      "k021_ambient_temperature_weather_range",
+      "r022_ambient_temperature_weather_stability",
+      "r021_ambient_temperature_weather_range",
+      "r021_ambient_temperature_weather_stability",
+      "k021_ambient_temperature_weather_stability",
+      "r020_ambient_temperature_weather_range",
+      "r020_ambient_temperature_weather_stability",
+      "location_cluster"
+    ],
+    "features_missing_in_test": [],
+    "features_missing_in_train": []
+  },
+  "errors_encountered": [],
+  "final_summary": {
+    "completion_time": "2025-09-22T21:11:47.451468",
+    "final_shapes": {
+      "X_train": [
+        42417,
+        100
+      ],
+      "X_val": [
+        10605,
+        100
+      ],
+      "X_test": [
+        10000,
+        100
+      ],
+      "y_train": [
+        42417
+      ],
+      "y_val": [
+        10605
+      ]
+    },
+    "total_features": 100,
+    "validation_checks_passed": true,
+    "files_exported": {
+      "csv_files": [
+        "train_engineered.csv",
+        "val_engineered.csv",
+        "test_engineered.csv"
+      ],
+      "numpy_arrays": [
+        "X_train_eng.npy",
+        "X_val_eng.npy",
+        "X_test_eng.npy",
+        "y_train_eng.npy",
+        "y_val_eng.npy"
+      ],
+      "metadata_files": [
+        "feature_metadata.json",
+        "preprocessing_objects.pkl"
+      ]
+    }
+  }
+}

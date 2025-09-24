@@ -1,0 +1,63 @@
+{
+  "total_original_records": 53306,
+  "outliers_removed": 284,
+  "outlier_percentage": 0.5327730461861704,
+  "low_outliers_removed": 41,
+  "high_outliers_removed": 243,
+  "zero_income_removed": 5,
+  "removal_criteria": {
+    "low_threshold": 200000,
+    "high_threshold": 100000000,
+    "reasoning": "2L-1Cr range removes data quality issues while preserving realistic farmer incomes"
+  },
+  "original_target_stats": {
+    "mean": 1376125.6582373467,
+    "std": 26471888.00865582,
+    "min": 0.0,
+    "max": 6000000000.0,
+    "median": 950000.0
+  },
+  "outlier_examples": {
+    "lowest_values": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      12,
+      28333,
+      29000,
+      30833,
+      32417
+    ],
+    "highest_values": [
+      6000000000,
+      800000101,
+      630000053,
+      220400025,
+      130410000,
+      100000000,
+      95000000,
+      90000000,
+      90000000,
+      85000000
+    ],
+    "extreme_outliers_removed": [
+      6000000000,
+      800000101,
+      630000053,
+      220400025,
+      130410000,
+      100000000,
+      95000000,
+      90000000,
+      90000000,
+      85000000
+    ]
+  },
+  "removal_timestamp": "2025-09-22T21:10:49.746564",
+  "iqr_removal": {
+    "applied": false,
+    "potential_outliers_identified": 1160
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "agricultural_engineering": {
+    "year_over_year_growth": [
+      {
+        "base_metric": "kharif_seasons_agricultural_performance_in",
+        "years_available": [
+          "2020",
+          "2021",
+          "2022"
+        ],
+        "columns": [
+          "kharif_seasons_agricultural_performance_in_2020",
+          "kharif_seasons_agricultural_performance_in_2021",
+          "kharif_seasons_agricultural_performance_in_2022"
+        ]
+      },
+      {
+        "base_metric": "kharif_seasons_kharif_season_irrigated_area_in",
+        "years_available": [
+          "2020",
+          "2021"
+        ],
+        "columns": [
+          "kharif_seasons_kharif_season_irrigated_area_in_2020",
+          "kharif_seasons_kharif_season_irrigated_area_in_2021"
+        ]
+      },
+      {
+        "base_metric": "rabi_seasons_agricultural_score_in",
+        "years_available": [
+          "2020",
+          "2021",
+          "2022"
+        ],
+        "columns": [
+          "rabi_seasons_agricultural_score_in_2020",
+          "rabi_seasons_agricultural_score_in_2021",
+          "rabi_seasons_agricultural_score_in_2022"
+        ]
+      }
+    ],
+    "seasonal_ratios": [
+      {
+        "kharif_column": "kharif_seasons_agricultural_performance_in_2022",
+        "rabi_column": "rabi_seasons_agricultural_performance_in_2022",
+        "base_metric": "seasons_agricultural_performance_in_2022"
+      },
+      {
+        "kharif_column": "kharif_seasons_agricultural_score_in_2022",
+        "rabi_column": "rabi_seasons_agricultural_score_in_2022",
+        "base_metric": "seasons_agricultural_score_in_2022"
+      },
+      {
+        "kharif_column": "kharif_seasons_agricultural_performance_in_2021",
+        "rabi_column": "rabi_seasons_agricultural_performance_in_2021",
+        "base_metric": "seasons_agricultural_performance_in_2021"
+      },
+      {
+        "kharif_column": "kharif_seasons_agricultural_score_in_2021",
+        "rabi_column": "rabi_seasons_agricultural_score_in_2021",
+        "base_metric": "seasons_agricultural_score_in_2021"
+      },
+      {
+        "kharif_column": "kharif_seasons_agricultural_performance_in_2020",
+        "rabi_column": "rabi_seasons_agricultural_performance_in_2020",
+        "base_metric": "seasons_agricultural_performance_in_2020"
+      },
+      {
+        "kharif_column": "kharif_seasons_agricultural_score_in_2020",
+        "rabi_column": "rabi_seasons_agricultural_score_in_2020",
+        "base_metric": "seasons_agricultural_score_in_2020"
+      }
+    ],
+    "performance_columns": 26,
+    "years_available": {
+      "2020": 6,
+      "2021": 6,
+      "2022": 6
+    },
+    "seasons_available": {
+      "kharif": 11,
+      "rabi": 9
+    }
+  },
+  "weather_engineering": {
+    "stability_features": [],
+    "weather_columns_by_year": {
+      "2020": 0,
+      "2021": 0,
+      "2022": 0
+    }
+  },
+  "infrastructure_engineering": {
+    "accessibility_features": [
+      {
+        "column": "k022_proximity_to_nearest_mandi_km",
+        "type": "distance/accessibility",
+        "feature_ideas": [
+          "k022_proximity_to_nearest_mandi_km_accessibility_index",
+          "k022_proximity_to_nearest_mandi_km_categorical",
+          "k022_proximity_to_nearest_mandi_km_log_transformed"
+        ]
+      },
+      {
+        "column": "road_density_km_sqkm",
+        "type": "distance/accessibility",
+        "feature_ideas": [
+          "road_density_km_sqkm_accessibility_index",
+          "road_density_km_sqkm_categorical",
+          "road_density_km_sqkm_log_transformed"
+        ]
+      }
+    ],
+    "infrastructure_columns": 3
+  },
+  "preprocessing_priority_order": [
+    "1. Remove outliers (< \u20b92L, \u2265 \u20b95Cr)",
+    "2. Handle missing values (>50% missing columns)",
+    "3. Remove constant/near-constant features",
+    "4. Create year-over-year growth features",
+    "5. Create seasonal ratio features",
+    "6. Create weather stability features",
+    "7. Create infrastructure accessibility features",
+    "8. Encode high cardinality categorical features",
+    "9. Handle multicollinearity (high correlation pairs)",
+    "10. Feature scaling and normalization"
+  ]
+}

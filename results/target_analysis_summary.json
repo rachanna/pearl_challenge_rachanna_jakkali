@@ -1,0 +1,28 @@
+{
+  "target_column": "target_income",
+  "total_records": 53306,
+  "missing_values": 0,
+  "negative_values": 0,
+  "zero_values": 5,
+  "outliers_below_200K": 41,
+  "outliers_above_1CR": 243,
+  "total_outliers": 284,
+  "clean_records": 53022,
+  "mean_income": 1376125.6582373467,
+  "median_income": 950000.0,
+  "std_income": 26471888.00865582,
+  "skewness": 219.08533486230476,
+  "outlier_thresholds": {
+    "lower": 200000,
+    "upper": 10000000
+  },
+  "clean_mean": 1127230.5205575044,
+  "clean_median": 945000.0,
+  "clean_std": 785895.6624914017,
+  "clean_skewness": 5.021704014676743,
+  "quartiles": {
+    "q1": 713075.0,
+    "q2": 945000.0,
+    "q3": 1280000.0
+  }
+}
